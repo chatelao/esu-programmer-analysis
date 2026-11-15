@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<speedtable xmlns="http://www.esu.eu/2010/LOKPROGRAMMER/SpeedTable">
+  <preset points="3">
+    <name xml:lang="en">Default</name>
+    <name xml:lang="de">Standard</name>
+    <value>3</value>
+    <value>88</value>
+    <value>255</value>
+  </preset>
+  <preset points="3">
+    <name xml:lang="en">Switcher</name>
+    <name xml:lang="de">Rangierlok</name>
+    <value>1</value>
+    <value>60</value>
+    <value>255</value>
+  </preset>
+  <preset points="3">
+    <name xml:lang="en">ICE</name>
+    <name xml:lang="de">ICE</name>
+    <value>1</value>
+    <value>140</value>
+    <value>255</value>
+  </preset>
+  <preset points="28">
+    <name xml:lang="en">Exponential 1</name>
+    <name xml:lang="de">Exponentiell 1</name>
+    <value>1</value>
+    <value>2</value>
+    <value>4</value>
+    <value>7</value>
+    <value>10</value>
+    <value>14</value>
+    <value>18</value>
+    <value>23</value>
+    <value>28</value>
+    <value>34</value>
+    <value>40</value>
+    <value>47</value>
+    <value>54</value>
+    <value>62</value>
+    <value>70</value>
+    <value>79</value>
+    <value>88</value>
+    <value>98</value>
+    <value>108</value>
+    <value>120</value>
+    <value>133</value>
+    <value>147</value>
+    <value>162</value>
+    <value>178</value>
+    <value>195</value>
+    <value>213</value>
+    <value>233</value>
+    <value>255</value>
+  </preset>
+  <preset points="28">
+    <name xml:lang="en">Exponential 2</name>
+    <name xml:lang="de">Exponentiell 2</name>
+    <value>1</value>
+    <value>1</value>
+    <value>2</value>
+    <value>3</value>
+    <value>3</value>
+    <value>4</value>
+    <value>4</value>
+    <value>5</value>
+    <value>5</value>
+    <value>6</value>
+    <value>6</value>
+    <value>7</value>
+    <value>10</value>
+    <value>14</value>
+    <value>18</value>
+    <value>24</value>
+    <value>31</value>
+    <value>40</value>
+    <value>50</value>
+    <value>63</value>
+    <value>77</value>
+    <value>93</value>
+    <value>112</value>
+    <value>134</value>
+    <value>159</value>
+    <value>187</value>
+    <value>219</value>
+    <value>255</value>   
+  </preset>
+  <preset points="28">
+    <name xml:lang="en">Linear</name>
+    <name xml:lang="de">Linear</name>
+    <value>1</value>
+    <value>9</value>
+    <value>18</value>
+    <value>28</value>
+    <value>37</value>
+    <value>47</value>
+    <value>56</value>
+    <value>66</value>
+    <value>75</value>
+    <value>85</value>
+    <value>94</value>
+    <value>103</value>
+    <value>113</value>
+    <value>122</value>
+    <value>132</value>
+    <value>141</value>
+    <value>151</value>
+    <value>160</value>
+    <value>170</value>
+    <value>179</value>
+    <value>188</value>
+    <value>198</value>
+    <value>207</value>
+    <value>217</value>
+    <value>226</value>
+    <value>236</value>
+    <value>245</value>
+    <value>255</value>
+  </preset>
+  <preset points="28">
+    <name xml:lang="de">Logarithmisch 1</name>
+    <name xml:lang="en">Logarithmic 1</name>
+    <value>1</value>
+    <value>35</value>
+    <value>54</value>
+    <value>69</value>
+    <value>81</value>
+    <value>93</value>
+    <value>104</value>
+    <value>114</value>
+    <value>123</value>
+    <value>132</value>
+    <value>141</value>
+    <value>149</value>
+    <value>157</value>
+    <value>165</value>
+    <value>173</value>
+    <value>180</value>
+    <value>187</value>
+    <value>194</value>
+    <value>201</value>
+    <value>207</value>
+    <value>214</value>
+    <value>220</value>
+    <value>226</value>
+    <value>233</value>
+    <value>239</value>
+    <value>244</value>
+    <value>250</value>
+    <value>255</value>
+  </preset>
+  <preset points="28">
+    <name xml:lang="de">Logarithmisch 2</name>
+    <name xml:lang="en">Logarithmic 2</name>
+    <value>1</value>
+    <value>65</value>
+    <value>86</value>
+    <value>108</value>
+    <value>123</value>
+    <value>136</value>
+    <value>146</value>
+    <value>155</value>
+    <value>163</value>
+    <value>171</value>
+    <value>177</value>
+    <value>184</value>
+    <value>190</value>
+    <value>195</value>
+    <value>200</value>
+    <value>205</value>
+    <value>210</value>
+    <value>215</value>
+    <value>219</value>
+    <value>223</value>
+    <value>227</value>
+    <value>231</value>
+    <value>235</value>
+    <value>238</value>
+    <value>242</value>
+    <value>245</value>
+    <value>249</value>
+    <value>255</value>
+  </preset>
+  <preset points="28">
+    <name xml:lang="de">LokSound 4 3 Punkt</name>
+    <name xml:lang="en">LokSound 4 3 Point</name>
+    <value>1</value>
+    <value>7</value>
+    <value>12</value>
+    <value>17</value>
+    <value>22</value>
+    <value>28</value>
+    <value>34</value>
+    <value>40</value>
+    <value>47</value>
+    <value>55</value>
+    <value>62</value>
+    <value>71</value>
+    <value>79</value>
+    <value>88</value>
+    <value>98</value>
+    <value>108</value>
+    <value>118</value>
+    <value>129</value>
+    <value>140</value>
+    <value>151</value>
+    <value>163</value>
+    <value>175</value>
+    <value>188</value>
+    <value>200</value>
+    <value>213</value>
+    <value>227</value>
+    <value>241</value>
+    <value>255</value>
+  </preset>
+</speedtable>

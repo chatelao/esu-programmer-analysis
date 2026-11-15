@@ -1,0 +1,1360 @@
+LokProgrammer5 - Release Notes
+===========================================================
+
+Version 5.2.17:
+==============
+- Bugfix:
+  * ESU digital interior light 2.0
+    - new firmware version 5.1.8 -> buffer time was too low when PowerPack capacitor was installed.
+
+Version 5.2.16:
+==============
+- Bugfix:
+  * LokPilot 5 Basic -> Write CV.
+  * LokSound 5 XL -> Output mode (effect) - External controlled smoke unit - ESU Smoke Unit (Gauge 0, G).
+- Soundeditor:
+  * Sound schedule -> containers can only be deleted if all associated container tabs are closed.
+- Tools:
+  * new menu item - Show project differences -> window for project differences.
+- LokSound 5 family / LokPilot 5 family / Essential Sound Unit:
+  * new firmware version 5.13.180 -> External controlled smoke unit - support for KM1 BR 98.3.
+
+Version 5.2.15:
+==============
+- Bugfix:
+  * SignalPilot -> Dropdown selection.
+
+Version 5.2.14:
+==============
+- Bugfix:
+  * German resources (texts) partly not available.
+- New decoder:
+  * LokPilot 5 micro KATO.
+- SignalPilot:
+  * new signals (UK/USA).
+- Virtual drivers cab:
+  * Decoder test - new buttons F33-F48.
+
+Version 5.2.13:
+==============
+- Actual Speed table values displayed:
+  * Decoder - Motor settings
+    -> you can now see the actual, computed values of the speed table settings the decoder will use.
+- Function rows:
+  * Information - Functions -> moving rows possible.
+- ScaleTrains Tenderlight:
+  * new firmware version 1.0.1469
+- New decoders:
+  * ESU digital interior light 2.0.
+  * Lenz LenS5 L.
+  * LokPilot 5 micro DCC Direct Atlas Legacy.
+- LokSound 5 family / LokPilot 5 family / Essential Sound Unit:
+  * new firmware version 5.12.178
+    -> Improved overcurrent protection to allow a motor current "kickoff" at low speed.
+
+Version 5.2.12:
+==============
+- Bugfix:
+  * Driver's cab -> Tooltip on function keys.
+
+Version 5.2.11:
+==============
+- SignalPilot:
+  * new signals (CFL Signals).
+  * DB H/V Signals: Addition of H/V Einfahrsignal HP0+Sh0/HP1/Hp0+Sh1/HP2/Hp0(Ersatzrot)+Sh0/Hp0(Ersatzrot)+Sh1.
+  * SBB L distant Signals: Addition of SBB L Vorsignal Halt/FB1/FB2/FB3/FB5/Halt,
+                           SBB L Vorsignal Halt/FB1/FB2/FB3/FB6, SBB L Vorsignal Halt/FB1/FB2/FB3/FB5/FB6.
+  * Lighting effects: Addition of Bahnübergang Lichtzeichen BÜ offen/BÜ geschlossen.
+- LokSound 5 family / LokPilot 5 family / Essential Sound Unit:
+  * new firmware version 5.12.177
+    -> added grade crossing option for "Single Strobe Random" light effect.
+- Selectable maximum track current in the driver's cab:
+  * In addition to the previous 500mA, 1000mA track current can now also be permitted. This is useful for
+    testing locomotives with higher current consumption. Make sure the power supply is dimensioned properly.  
+
+Version 5.2.10:
+==============
+- Function mapping:
+  * Sounds - sound slot number is also displayed.
+- SignalPilot:
+  * Lighting effects - Beleuchtung / LED / Flackerlicht
+    -> new signal picture for "Enable function timeout".
+- LokSound 5 family / LokPilot 5 family:
+  * new firmware version 5.12.176
+    -> new output mode (effect) for Servo-Outputs: Servo Pantograph bouncing.
+    -> Light effekt Servo Output Johnson Bar Control improved: Now Pos A is approached
+       when requested speed >0 and forwared, Pos B when requested pseed >0 traveling backwards.
+       When the locomotive is stationary, the center is approached.
+    -> Bugfix: Fixed SUSI Mapping error.
+
+Version 5.2.9:
+==============
+- LokSound 5 family / LokPilot 5 family / Essential Sound Unit:
+  * new firmware version 5.10.168
+    -> improved brightness settings for lighting effect "FireBox".
+- LokSound 5 family / Essential Sound Unit:
+  * new firmware version 5.11.169
+    -> new feature auxiliary steam chuff trigger:
+       If enabled, steam chuffs from sound slot 4 will be synchronized using
+       those settings. This feature can be used to independently trigger
+       auxiliary steam motors that could be turned on / off in addition to the
+       prime mover steam chuffs.
+- LokSound 5 family / LokPilot 5 family:
+  * new firmware version 5.12.172
+    -> SUSI-Mapping extended by one line for F0 Reverse to allow for direction dependent control of F0.
+    -> new output mode (effect) for function outputs: Trigger smoke chuff "Edge Toggle" to be used with
+       latest Märklin / Trix H0 locomotive's synchronized smoke units.
+- SignalPilot:
+  * SNCB signals: Addition of two main signals without Shunting light.
+
+Version 5.2.8:
+==============
+- LokSound 5 family / LokPilot 5 family / Essential Sound Unit:
+  * new firmware version 5.10.166
+    -> Light effect Servo Output Johnson Bar Control: Pos A is approached when driving forward,
+       Pos B when traveling backwards. When the locomotive is stationary, the center is approached.
+    -> Transmission of the real speed via RailCom.
+    -> new RailComPlus Page 256, Byte 64: Definition of the Tacho VMax display.
+    -> Forward- and Reverse-Trim values are taken care of in the sound machine now.
+
+Version 5.2.7:
+==============
+- LokSound 5 family / LokPilot 5 family / LokPilot 5 Basic / Essential Sound Unit:
+  * new firmware version 5.9.162 / LokPilot 5 Basic - firmware version 5.1.6
+    -> new function: Light effect - Smart firebox lets the LED flicker synchronously with the steam chuff.
+    -> new function: Light effect - Neon light now also simulates a defective neon lamp.
+    -> the logical function "Firebox" is no longer available.
+  * preset motor type Bühler generic -> CV52 = 0.
+- Soundeditor:
+  * Sample list
+    -> entering up to three initial characters of the file name selects the row.
+- New decoder:
+  * LokSound 5 nano DCC Next18.
+
+Version 5.2.6:
+==============
+- Pullman BLS Bt9:
+  * new firmware version 1.0.1468 -> direction of travel corrected for DC analog.
+- LokSound 5 family:
+  * new firmware version 5.9.160 -> Tone Control - fade-out of the output stage corrected.
+
+Version 5.2.5:
+==============
+- Soundeditor:
+  * Sample list
+    -> entering the first letter of the file name selects the row.
+- Drivers cab - Decoder test:
+  * Tone Control - Master volume / Bass / Treble.
+- LokSound 5 family / LokPilot 5 family:
+  * new firmware version 5.9.159
+    -> CV 122 Bit 7: Compatibility -> Broadway Limited Steam Engine Control.
+    -> new CVs 196/197: Sound settings -> Tone Control -> Bass, Treble.
+- LokSound 5L / LokSound 5L DCC:
+  * Support for hardware revision V5.1.
+- New decoder:
+  * LokPilot 5 micro DCC Direct.
+- Bugfixes:
+  * Manual CV input -> CV31=16/CV32=0/CV278 - maximum value limited to 31.
+
+Version 5.2.4:
+==============
+- Soundeditor:
+  * Sample list
+    -> revised.
+    -> columns sortable in ascending and descending order.
+    -> file name editable with F2, context menu or Alt + double click.
+    -> new reference counter column.
+  * Double click on state selects the sample used.
+- SignalPilot:
+  * new firmware version 1.0.9 -> support for hardware revision V2.0.
+- LokSound 5 family / LokPilot 5 family:
+  * new firmware version 5.8.156 -> Decoder - Sound settings -> Dynamic sound control.
+- LokSound 5 H0 family:
+  * new firmware version 5.8.156 -> Sensor 1 and Sensor 2 can be configured as analog sensors. 
+- LokSound 5 family / LokPilot 5 family / Essential Sound Unit / LokPilot 5 Basic:
+  * new firmware version 5.8.156 / LokPilot 5 Basic - firmware version 5.1.4
+    -> new CV 199: Define Class light logic sequence length.
+    -> "Phase Shift" instead of "Alternate Phase" for certain function output modes: Allows for different start of the output.
+    -> Optional Class light logic for light modes "Dimable Headlight" or "Dimmable headlight (fade in/out)".
+- LokProgrammer device:
+  * new firmware version 0.1.135 -> support for hardware revision V3.7.
+- Bugfixes:
+  * Query "Save changes" before converting to another project.
+
+Version 5.2.3:
+==============
+- New decoders:
+  * Pullman BLS Bt9.
+  * LokSound 5 micro DCC Direct Atlas S2.
+  * LokPilot 5 Nano DCC.
+- LokPilot 5 Basic:
+  * Default values added.
+- LokSound 5 / LokSound 5 DCC / LokSound 5 MKL:
+  * Support for hardware revision V5.1.
+- LokSound 5 family / Essential Sound Unit:
+  * new firmware version 5.6.149
+    -> new CV 122.5: Analog settings - Sound control behaviour - Ignore Acceleration and Deceleration values in the sound schedule.
+- LokSound 5 family / LokPilot 5 family:
+  * new firmware version 5.7.151
+    -> new CV 122.6: Analog settings - Analog mode motor control - High frequency PWM motor control.
+- Bugfixes:
+  * LokPilot 5 Fx micro Next18 / LokPilot 5 Fx micro Next18 DCC
+    - new firmware version 5.6.148 -> Service mode programming possible without AUX1.
+  * Protect sound project
+    - when clicking OK occasionally a NullReferenceException could occur.
+  * Soundeditor - Samples reference counter.
+
+Version 5.2.2:
+==============
+- LokPilot 5L:
+  * new firmware version 5.6.145
+    -> support for new silicon revision of ARM controller.
+- Read and Write CVs:
+  * Main track programming (POM)
+    -> differentiation between loco decoder and accessory decoder.
+    -> lokaddress up to maximum 10239.
+- Write decoder data:
+  * Main track programming (POM) possible.
+- SignalPilot:
+  * new firmware version 1.0.8
+    -> support for two SwitchPilot Extensiony.
+    -> output configured for automatic timeout will no longer be enabled at startup.
+  * new signals. 
+- SwitchPilot 3 Servo:
+  * new firmware version 3.0.13
+    -> servopulses will be sent to the servo every 20ms now.
+- Bugfixes:
+  * LokSound 5 family
+    -> Sound schedule - Container code size validate.
+    -> Soundsimulator - Register conditions >= and <= were interpreted as > and <.
+    -> new firmware version 5.6.147 - Register conditions >= and <= were interpreted as > and <.
+
+Version 5.2.1:
+==============
+- New decoder:
+  * LokSound 5 micro DCC Direct Atlas Legacy.
+- LokSound 5 family:
+  * new firmware version 5.6.145
+    -> new function ESU fan control:
+       Fan motors can now be controlled using soundslots, if the motherboard allows for that.
+  * Sound schedule - State
+    -> maximum of the pitch range filter increased to 12.
+- LokSound 5 / LokSound 5L / LokSound 5 MKL / ESU:
+  * Support for new silicon revision of ARM controller.
+- Read and Write CVs:
+  * CV write via main track programming (POM) possible.
+- Drivers cab - Decoder test:
+  * CV Write via main track programming (POM) possible.
+- Sound project overview:
+  * Sound type can be changed only with closed sound slots.
+
+Version 5.2.0:
+==============
+- .NET Framework 4.8
+  * The LokProgrammer software now requires Windows 7 (Service Pack 1) or higher and
+    the .NET Framework 4.8.
+    The .NET Framework 4.8 is automatically installed when an internet connection is established.
+    For Windows 7 (Service Pack 1), SHA-2 code signing support (KB4474419) must be installed.
+
+Version 5.1.10:
+==============
+- Bugfixes:
+  * LokSound 5 micro / LokSound 5 micro DCC
+    LokPilot 5 micro Next18 / LokPilot 5 micro Next18 DCC
+    LokPilot 5 Fx micro Next18 / LokPilot 5 Fx micro Next18 DCC
+    - new firmware version 5.6.144 -> Susi initialization problem fixed.
+
+Version 5.1.9:
+==============
+- Display of the COM port in the status bar.
+- Bugfixes:
+  * LokSound 5 family / LokPilot 5 family / Essential Sound Unit - new firmware version 5.6.143
+    -> Susi initialization problem fixed.
+
+Version 5.1.8:
+==============
+- SwitchPilot 3 family:
+  * new firmware version 3.0.12 -> Support for new hardware release V3.1.
+- SignalPilot:
+  * new Austrian and Dutch signals added.
+- Additional function key icons for RailComPlus, suitable for ECoS firmware 4.2.9.
+
+Version 5.1.7:
+==============
+- LokSound 5 family / LokPilot 5 family / Essential Sound Unit:
+  * new firmware version 5.6.142
+    -> new CV 122.4: General physical output settings - Enforce slave communication on AUX3 and AUX4.
+- SignalPilot:
+  * new SBB L Hauptsignal Halt/FB1/FB2/FB3/FB4/FB5/FB6/Hilfssignal N/Rot/Ersatzrot signal.
+- Bugfixes:
+  * LokSound 5 family / LokPilot 5 family - Physical output configuration
+    -> mapped outputs were not displayed in black in some cases.
+
+Version 5.1.6:
+==============
+- LokSound 5 family / Essential Sound Unit:
+  * new firmware version 5.5.141
+    -> Support of additional Flash-memory IC used for sound storage.
+
+Version 5.1.5:
+==============
+- LokPilot 5 family / Essential Sound Unit:
+  * new firmware version 5.5.140 -> Support of new revisions of ARM Controller.
+- Bugfixes:
+  * LokPilot 5 Basic - read decoder data.
+
+Version 5.1.4:
+==============
+- New decoder:
+  * LokPilot 5 Basic.
+- LokSound 5 family / LokPilot 5 family / Essential Sound Unit:
+  * new firmware version 5.5.139
+    -> new CV 114: Fade-In time for light function outputs can be defined now.
+    -> new CV 115: Fade-Out time for light function outputs can be defined now.
+    -> new CV 131: Brightness of dimmed lamps (if logical function dimmer is active)
+       can be defined now (in the past it was fixed 50% of the brightness).
+    -> new settings for servo outputs:
+       - the servo pulse can now remain enabled for each end position of the servo.
+- LokSound 5 micro E24 DCC renamed to LokSound 5 nano DCC.
+
+Version 5.1.3:
+==============
+- SignalPilot:
+  * new firmware version 1.0.6 -> global flashing frequency.
+  * Turnout numbers - when adding a new signal, the numbering of the turnout numbers
+                      starts from the highest turnout number of all existing signals.
+                    - when changing the first turnout number of a signal all
+                      following turnout numbers of the signal are adjusted.
+  * new signals (DB semaphore signals Viessmann, DB Sv signals, Subsidiary signals).
+- LokSound 5 family / LokPilot 5 family / Essential Sound Unit:
+  * new firmware version 5.4.135
+    -> new output mode (effect) for Servo-Outputs: Servo Steam Johnson Bar Control.
+    -> Bugfix: LokSound 5 L, LokSound 5 XL outputs AUX15-AUX18 now follow all output mode settings.
+
+Version 5.1.2:
+==============
+- LokSound 5 family / LokPilot 5 family / Essential Sound Unit:
+  * new firmware version 5.4.131 -> ABC break mode trackvoltage threshhold reduced.
+  * new firmware version 5.4.132 -> improved slowing down when constant brake mode is enabled.
+  * Motor Settings - preset Märklin Softdrive C-Sinus Motor -> CV53 = 255.
+- SignalPilot:
+  * Change decoder settings - Address -> names changed.
+  * new signals.
+- Write decoder data / Write sound data:
+  * notification before firmware update - configurable via program settings.
+- Bugfixes:
+  * SignalPilot - new firmware version 1.0.5 -> turnout numbers from 253 possible.
+  * SwitchPilot 2 Servo - is occasionally recognized as a SwitchPilot 3 servo when reading out.
+  * SwitchPilot 3 family - current threshold of acknowledge increased
+                           -> reading CV occasionally returns incorrect values.
+
+Version 5.1.1:
+==============
+- Bugfixes:
+  * LokSound 5 family - Soundsimulator -> scrollbars.
+                      - read dcc decoder data -> the selection of the speed table are
+                                                 not correctly adopted in some places.
+  * Soundeditor - when importing a template into a steam project
+                  the steam chuff container was not active.
+  * Function outputs - Physical output configuration
+                       -> Smoke unit (controlled by sound) - display error Heating control / Fan control.
+- Soundeditor:
+  * importing templates is only possible if all associated sound slot tabs are closed.
+- SwitchPilot:
+  * Servo settings - new design.
+  * Permanent output (K83 compatible, Motorola only) renamed to Momentary action operation (K83 compatible).
+- SignalPilot:
+  * new signals.
+  * new firmware version 1.0.4.
+- Hint for LokProgrammer support up to Windows 7 without Service Pack 1.
+- LokSound 5 family / LokPilot 5 family / Essential Sound Unit:
+  * new firmware version 5.4.130 -> new light effect: 16 2/3 Hz flickering.
+- New decoders:
+  * LokSound 5 Fx, LokSound 5 Fx DCC, LokPilot 5 Fx, LokPilot 5 Fx DCC,
+    SwitchPilot 3, SwitchPilot 3 Plus, SwitchPilot 3 Servo.
+
+Version 5.1.0:
+==============
+- Bugfixes:
+  * Soundsimulator -> no longer crashes if the sound schedule is incorrectly.
+  * copy sound slot to template - comments are now also copied.
+- New decoder:
+  * SignalPilot.
+- SwitchPilot:
+  * Output settings - new design.
+  * Enable decoder address - new design.
+- LokSound 5 family / LokPilot 5 family / Essential Sound Unit:
+  * new firmware version 5.3.128 -> new implemented, improved AC- and DC-Analogmode.
+
+Version 5.0.17:
+==============
+- LokSound 5 family / LokPilot 5 family / Essential Sound Unit:
+  * new firmware version 5.3.126 -> Workaround: Fixed servo problems with ROCO Multimouse.
+- New decoders:
+  * LokSound 5 micro E24 DCC, LokSound 5 micro KATO.
+- Soundeditor:
+  * Sound schedule - mark an area
+    -> release the left mouse button and press the shift key - only states are selected.
+    -> release the left mouse button and press the alt key - only transitions are selected.
+
+Version 5.0.16:
+==============
+- Bugfixes:
+  * LokSound 5 family / LokPilot 5 family / Essential Sound Unit - new firmware version 5.3.125
+    -> F16-F31 now working correctly following RCN212, Section 2.3.7.
+    -> significantly improved Analog detection: Much better driving characteristics under DC and AC.
+
+Version 5.0.15:
+==============
+- Bugfixes:
+  * check for new version (TLS 1.0/1.1 deprecated).
+- LokPilot 5 family:
+  * Compatibility - warning for inconsistent AUX settings (SUSI).
+  * Function outputs - warning with non-functional AUX when SUSI on.
+- LokSound 5 family / LokPilot 5 family:
+  * Function outputs - warning with non-functional AUX when digital wheel sensor on.
+
+Version 5.0.14:
+==============
+- Bugfixes:
+  * Information - General -> from index 129 locomotive image type not correct.
+  * Bulletin -> standard locomotive pictures are not adopted.
+- New decoders:
+  * LokPilot 5 Fx Micro Next18, LokPilot 5 Fx Micro Next18 DCC.
+- LokSound 5 family / LokPilot 5 family / Essential Sound Unit:
+  * new firmware version 5.3.122
+    - New output mode (effect): Digital coupler Coil#2.
+    - Lighting Mode "Fitch light type1": Now Fading-in and -out when turned on.
+    - CV122 Bit 3: If set, it will double the amount of steam chuffs if shunting mode is enabled.
+    - Load dependend sound: The sound schedule's acceleration is now immediately following "Optional Load" / "Primary Load" (again).
+    - Bugfixes:
+      - Output mode (effect) "Flashing light" did not work properly with Grade crossing.
+      - In motorola-programming mode now the correct outputs are flashing.
+      - Fixed SUSI-Problem with Brawa locomotives.
+
+Version 5.0.13:
+==============
+- Bugfixes:
+  * scaling for display scaling greater than 100%.
+  * LokSound 5 family / LokPilot 5 family - new firmware version 5.3.115
+    -> wrong light outputs flashing in Motorola Programming mode.
+    -> flashing light did not work in combination with gradecrossing.
+
+Version 5.0.12:
+==============
+- Bugfixes:
+  * LokPilot 5 Fx micro, LokPilot 5 Fx micro DCC - new firmware version 5.2.106.
+- LokSound 5 family / LokPilot 5 family:
+  * new firmware version 5.2.108 - Motor Settings -> Enable motor current limiter.
+                                 - Special options -> Memory Settings.
+  * new firmware version 5.3.112 - improved ABC braking detection.
+                                 - Sound schedule -> more transitions per each state.
+- LokSound 5 family:
+  * new firmware version 5.3.110 - Loadsimulation:
+                                   Acceleration and Speed in the sound schedule now following the values from CV3 and CV4.
+  * new firmware version 5.3.113 - Sound slot properties -> Speed ignores speedtable.
+
+Version 5.0.11:
+==============
+- Bugfixes:
+  * LokSound 5 family - Compiler -> Or conditions.
+- New Features:
+  * new Decoders - LokPilot 5, LokPilot 5 DCC, LokPilot 5 micro, LokPilot 5 micro DCC,
+                   LokPilot 5 micro Next18, LokPilot 5 micro Next18 DCC, LokPilot 5 L,
+                   LokPilot 5 L DCC, LokPilot 5 Fx micro, LokPilot 5 Fx micro DCC,
+                   LokPilot 5 MKL, LokPilot 5 MKL DCC.
+- LokSound 5 family:
+  * new firmware version 5.2.105 - HLU settings -> Send ZIMO ZACK signals.
+- Title bar -> display of more current firmware version in .esux file than in LokProgrammer.
+
+Version 5.0.10:
+==============
+- Bugfixes:
+  * LokSound 5 family - new firmware version 5.1.102 -> Soundmachine (Random).
+  * Soundeditor - Sound schedule -> copying states or containers (logical mapping).
+- Program settings - rename "Fast mode" to "Use package pipelining".
+- LokSound 5 family:
+  * new firmware version 5.2.103 - Automatic uncoupling -> Wait time.
+
+Version 5.0.9:
+==============
+- Bugfixes:
+  * LokSound 5 family - new firmware version 5.1.91 -> Trix - change of direction.
+  * Soundsimulator - Actions -> Reset register bitwise.
+- Read and write decoder data optimized.
+- LokSound 5 family:
+  * Soundeditor - Actions -> extended by SoundCV.
+  * new firmware version 5.1.96 - Sound slot configuration -> Volume up to 255 possible.
+  * new firmware version 5.1.97 - Soundeditor -> 7,812 kHz / 8 Bit and 16 bit wave files possible.
+  * new firmware version 5.1.98 - SUSI support for Brawa locomotives.
+  * new firmware version 5.1.101 - Function outputs -> new mode (effect) - brake light.
+                                 - ZIMO HLU.
+  * Special options -> RailComPlus & M4 Master Decoder Synchronization.
+- Soundeditor:
+  * default size of mute and container changed.
+- New decoder:
+  * Pullman Silberling.
+- SwitchPilot V2.0 / SwitchPilot Servo V2.0:
+  * new firmware version 2.1.1172 - Servo settings -> bounces, bouncing.  
+
+Version 5.0.8:
+==============
+- Bugfixes:
+  * LokSound 5 family - read decoder data
+                        -> servo output values - position b (function outputs) ​​are not correctly adopted in some places.
+                      - translation CV24.6:0 -> Deceleration adjustment.
+  * Soundeditor - comment doublet after opening a steam multi-channel project.
+- Motor settings:
+  * Speed table - new preset (LokSound 4 3 Point).
+- LokSound 5 family:
+  * new firmware version 5.0.81 - QSI support -> improved direction change behaviour.
+  * new firmware version 5.1.85 - Activate functions in consist mode -> Front light, Rear light, F16-F30.
+                                - Serial user standard interface - SUSI Master/Slave.
+  * new motor preset settings for coreless motor.
+- Soundeditor:
+  * Sound schedule - improved paste (Ctrl+V).
+  * State transition - new register "Current Speed".
+- New decoder:
+  * LokSound 5 MKL.
+
+Version 5.0.7:
+==============
+- Bugfixes:
+  * LokSound 5 family - new firmware version 5.0.78 -> gauge 1 smoke unit.
+- New firmware version 5.0.77 for LokSound 5 family:
+  * Load control optimized.
+
+Version 5.0.6:
+==============
+- Bugfixes:
+  * LokSound 5 family - new firmware version 5.0.73 -> Märklin CS3 - 32 functions.
+                      - registration Mobile Station 1.
+- Sound:
+  * Sound overview - icon to indicate SoundCV usage.
+                   - tool tip on SoundCV, Shift, Share icons with numbers.
+  * Write sound data - error handling improved.
+- LokSound 5 family:
+  * Soundeditor - Drivestop in Soundslot 1 and Soundslot 2 enabled.
+  * Compatibility - warning for inconsistent AUX settings (SUSI).
+  * Function outputs - warning with non-functional AUX when SUSI on.
+- New decoder:
+  * Zeitgeist Models - zugspitz car.
+- Tools:
+  * new menu item - LokProgrammer device -> window for LokProgrammer device informations.
+
+Version 5.0.5:
+==============
+- Bugfixes:
+  * Sound simulator - incorrect playback of state transitions immediate / cross.
+  * Sound - add sound files -> volume is partially changed.
+  * LokSound 5 family - new firmware version 5.0.68 -> constant brake distance on speed step 0 (CV27.7).
+                      - new firmware version 5.0.71 -> CV23 and CV24 incorrect acceleration time / brake time adjustment.
+                      - read decoder data into the current project
+                        -> brightness values (function outputs) ​​are not correctly adopted in some places.
+- Information:
+  * Locomotive description - height of input field increased.
+- Bulletin:
+  * show decoder type.
+- New firmware version 5.0.70 for LokSound 5 family:
+  * Physical output configuration - new output mode -> Servo Power.
+
+Version 5.0.4:
+==============
+- Bugfixes:
+  * Soundeditor - Volume min/max and pitch range min/max can not be changed when the text box is empty.
+                - Soundtype(single-channel) -> in a trigger condition, a mode other than immediate can be selected. 
+  * LokSound 5 family - Compiler -> state without sample is occasionally left too early.
+- New firmware version 5.0.67 for LokSound 5 family / Essential Sound Unit:
+  * Soundslot 1 and Soundslot 2 determine if driving sound is on for random sound.
+  * DCC decoder - Speed table -> additional "Use three values".
+
+Version 5.0.3:
+==============
+- Bugfixes:
+  * LokSound 5 family - new firmware version 5.0.65 for Motorola and SuSi protocol.
+  * Decoder "Test coach EHG388 M4" - defaults ​​are missing.
+- LokSound 5 family - Compiler code size reduced.
+
+Version 5.0.2:
+==============
+- Bugfixes:
+  * LokSound 5 family - after converting to a LokSound V5 project are in the containers
+                        the new conditions and actions of the transitions are not available.
+- New firmware version 5.0.63 for LokSound 5 family:
+  * CV23, CV24 and CV135 added.
+
+Version 5.0.1:
+==============
+- New firmware version 5.0.59, 5.0.60 for LokSound 5 family:
+  * Brake functions: Influence of CV179, CV180, CV181 changed.
+  * New logical function "Acceleration/Deceleration Off".
+  * Timer for CV113 "Power Pack Control" doubled.
+  * Different brake distance while driving backwards.
+  * CV 255 added.
+- Bugfixes:
+  * LokSound 5 family - when converting to an LokSound V5 project,
+                        under Output mode (effect) "Coupler" / "Coupler force" uses the wrong CV.
+                      - CV8 = 0.
+                      - Autorecovery does not use the LokSound V5 project after converting.
+  * Virtual driver's cab - keyboard F10 does not react with moment function.
+  * Soundeditor - when clicking on transitions, the order can be reversed.
+
+Version 5.0.0:
+==============
+- New Features:
+  * New Decoders - LokSound 5, LokSound 5 DCC, LokSound 5 micro, LokSound 5 micro DCC,
+                   LokSound 5 micro DCC Direct, LokSound 5 L, LokSound 5 L DCC, LokSound 5 XL.
+- Bugfixes:
+  * LokSound V4 - when converting to an M4 project, the M4-icon is not adapted to a changed icon.
+  * Manual CV input.
+  * Soundeditor - when copying a sound schedule, only visible states are copied.
+                - when copying transitions, the order can be reversed.
+  * Essential Sound Unit new firmware version 5.0.26 (minimum sound speed) and Version 5.0.35.
+- Program settings:
+  * Play sound after writing on the decoder.
+- Sound simulator:
+  * Timer more accurate.
+- Virtual drivers cab:
+  * Decoder test - new buttons F29-F32.
+                 - darker button color when the function is switched on.
+- New firmware version 5.0.31 for Essential Sound Unit:
+  * Random function new condition - only play when the driving sound is enabled.
+- Soundeditor:
+  * Container - improved paste (Ctrl+V).
+  * Constants - used constants can not be deleted.
+  * Sound schedule - zoom with Ctrl + mouse scroll wheel.
+
+Version 4.7.2:
+==============
+- Bugfixes:
+  * Soundeditor - copy template -> if the template folder is closed the confirmation dialog to overwrite templates with
+                  the same name is missing.
+- Essential Sound Unit:
+  * SoundCV configuration - Design modified.
+  * Random functions - Design modified.
+- Soundeditor:
+  * Transition - show trigger condition with value.
+- Motor settings:
+  * Load control grouped. 
+- New RailComPlus locomotive icons.
+- New firmware version 4.17.9249 for LokSound V4, LokSound Select:
+  * New feature - divide Trigger impulses in two if Shunting mode enabled (CV245.5). Visible when "Use external wheel sensor" enabled.
+
+Version 4.7.1:
+==============
+- Bugfixes:
+  * LokSound V4 - Steam (multi-channel), trigger condition not available for existing projects (depending on sound schedule).
+                - State properties -> combo box preset is not displayed with ESU Smoke Unit.
+                - Sound schedules with state transitions without destination can not be saved.
+  * Brake settings - some CV labels are missing.
+- Soundeditor:
+  * Transition settings - condition true/false value default value true.
+- New decoder:
+  * Essential Sound Unit.
+
+Version 4.7.0:
+==============
+- Bugfixes:
+  * LokSound V3.5 family - Soundslot can not be assigned in function mapping.
+  * LokSound V3 - changed Soundslot name is not displayed or updated in combo box (sounds).
+  * LokPilot Basic, SwitchPilot - manual CV input is missing.
+  * LokSound V4 - writing the sound data from an imported LokSound V3 project is not possible.
+  * LokPilot V3.0 DCC - can not open or import .esu files.
+  * LokSound V4 - when converting to an M4 project, the checked checkboxes of the Moment column will not be applied.
+  * LokPilot Nano Standard V1 - writing decoder data is not possible.
+  * LokSound V4 / LokPilot V4 - writing decoder data with project convert and firmware update is not possible.
+  * LokSound XL V4.0 - wrong mapping of Soundslots when importing a .esu project.
+  * After deleting a Soundslot the Soundslot name is not updated in "Soundslot settings" and combo box (Sounds).
+  * After import a template the Soundslot name is not updated in "Soundslot settings" and combo box (Sounds).
+  * After changing the sound type, a NullReferenceException could occur when editing a state in the sound schedule.
+- New firmware version 4.16.9248 for LokSound Micro V4, LokSound Select direct / micro:
+  * SUSI support
+- Build date on Info window.
+- Soundeditor:
+  * Keep scroll position at Soundslot properties.
+  * Overview -> context menu - delete Soundslot inactive if a Soundslot Tab is open.
+
+Version 4.6.2:
+==============
+- New decoder: Walthers ML8.
+- Menu item save bulletin only enabled if a project is open.
+- New firmware version 4.16.9247 for LokSound V4, LokSound Select, LokPilot V4.0, Measurement car EHG388, Club car WGye:
+  - New feature: CV179 determines the deleration value that is used when the logical function "Dynamic Brake" is active.
+- New firmware version 1.2.1415 for LokPilot Standard and LokPilot Nano:
+  - Bugfix: CV4 was not followed when the "Virtual Drive Sound" was active.
+
+Version 4.6.1:
+==============
+- State editor scrollbar was not visible in english version.
+- Fix NullReferenceException in Tools -> Update Firmware.
+- Automatic firmware update when writing sound and decoder data on decoder without firmware.
+- Sound simulator did not evaluate state range parameter.
+- Change directional flag on M4 mapping could lead to an exception.
+- Read decoder data into new project did not show configuration UI.
+- Show function key description as tool tip in the function mapping.
+- Fixed a bug where state color was not updated after wave sample assignment.
+- Fixed a bug where sound assignment affected the wrong state if two or more states are on the same position.
+
+Version 4.6.0:
+==============
+- New Soundsimulator user interface.
+
+Version 4.5.3:
+==============
+- New Firmware for LokSound V4, LokPilot V4: 4.15.9246, LokPilot Standard: 1.2.1408 and Digital Interior Lighting: 1.0.1461.
+  - Consist control command via broadcast.
+  - "Drive Hold" function for LokPilot decoders.
+- Fixed invalid display of LokSound V3.5 sound slots in the function mapping.
+- Support for Bachmann MK2F.
+- Soundslot preview did not work for all sound slots on LokSound Select.
+- Fixed display issues when using custom scaling  / large font.
+- Fixed sound write issues with newer LokSound V4.0 decoders.
+
+Version 4.5.2:
+==============
+- Manual CV Input has been showed on decoders without CVs.
+- Some LokSound V3.0 M4 files opened conversion dialog instead of loading the project.
+- Firmware version 1.0.1460 for MBW Silberling.
+- Disable virtual driver's cab and read write CVs during programming.
+- Name of sound slot 2 has not shown correctly oon LokSound Select steam projects.
+- Fixed keyboard shortcut behavior of momentary functions in the virtual drivers cab.
+- LokPilot Nano FX firmware 1.2.1407: Support for Motorola protocol.
+- Club car WGye Firmware 4.15.9243: Save current volume.
+- Adjusted bulletin formatting for long description text.
+
+Version 4.5.1:
+==============
+- Output mode Roco coupler was missing on LokPilot V4.0 DCC.
+- Firmware version 1.2.1405 for LokPilot Standard Nano and LokPilot Standard Nano Fx.
+
+Version 4.5.0:
+===============
+- Virtual command station uses momentary function settings from the current project.
+- Added sound selection CV to sound slot settings.
+- Fixed sound slot previrew for LokSound Select.
+- Added snap to grid function to sound schedule editor.
+- Added comments to sound schedule editor.
+- Start- and end state size is now changable.
+- Paste in sound schedule is now aware of the current scroll position.
+- Added flash size to extended decoder information.
+- Could not open .esux files of non-updateable decoders.
+- LokSound Firmware 4.15.9240: Added Heavy Load and Coast mode.
+
+Version 4.4.25:
+===============
+- Fixed faulty evaluation of constants with names that contain a "-" or "+".
+
+Version 4.4.24:
+===============
+- Improved sound slot and phyisical output configuration user interface.
+- Display function icons of the current project to virtual command station.
+- Highlight current state in sound slot simulator.
+- Fixed problems with "changed" state.
+- Improved compatibility with LokSound XL V3.5 (Piko version)
+- New Firmware for ScaleTrains Tenderlight and Digital Interior Lighting.
+
+Version 4.4.23:
+===============
+- Fixed a bug where a firmware update could lead to an invalid decoder configuration.
+
+Version 4.4.22:
+===============
+- Fixed a bug that caused an invalid LokSound Select configuration when updating from 4.14.9202 or 4.14.9217.
+
+Version 4.4.21:
+===============
+- Added new RailComPlus locomotive icons (for Mobile Control II).
+- Fixed firmware version of LokPilot V3.0 FX.
+- Fixed LokPilot V3.0 RailCom settings.
+- Added locomotive address to overview sheet.
+- Fixed "Decoder version n/a is not supported" error.
+- Automatic project type conversion to target decoder. (Can be disabled at Program settings -> Automatic decoder type conversion).
+- Added support for Scale Trains Tender Light.
+- Added support for Club car WGye.
+- Added support for LokPilot Standard Nano V1.0
+
+Version 4.4.20:
+===============
+- Added indicator for shift function.
+- Fixed empty containers show all mapping indicators
+- Fixed exception when changing zoom level.
+
+Version 4.4.19:
+===============
+- Added support for LokSound Select L.
+- Added colored bars to sound states to indicate AUX-, logical- and sound mapping.
+- Added icons to indicate state mapping and share usage in sound overview.
+- Fixed wrong text in EHG388 speed display.
+- Fixed a bug where sound simulator changed timer instead of share register.
+
+Version 4.4.18:
+================
+- Fixed missing CV numbers at speedometer settings.
+- Firmware version 2.0.1163 for SwitchPilot V2.0 and SwitchPilot Servo V2.0: Increased servo pulse time to 32 ms.
+- Firmware 4.14.9217 for the V4.0 decoder family:
+  - Added new "Random strobe" effect, e.g. for Amtrak engines.
+  - Fixed motor pwm freuqency for LokPilot micro V4.0.
+
+Version 4.4.17:
+================
+- Added support for LokSound L V4.0
+- Added warnings for inconsistent AUX5 / AUX6 settings (only LokSound V4.0).
+- Saving a 1 channel steam project might have caused an error.
+- Fixed display problems on servo outputs.
+- Fixed wrong CV assignments on LokPilot V3.0 OEM.
+
+Firmware 4.4.9202:
+- Added support for analog sensors (LokSound XL V4.0 only).
+- Added CV to stop immediately (emergency stop) at speed step 0.
+- Speed indicator is now configurable (EHG388 test coach only).
+
+Version 4.4.16:
+===============
+- Interior lighting firmware version 0.0.1446 could not be read.
+- Added missing firmware 2.0.1160 for SwitchPilot v2.0
+- The option (disabled) was missing on function outputs when reading decoder data.
+
+Version 4.4.15:
+===============
+- CVs of LokSound XL V4.0 decoders have not been read correctly if decoder firmware 4.10 or older has been installed.
+- Some decoders did not react to drive commands after update via Tools -> Update firmware.
+- Added an information message if the automatic mapping adjustment for C-Sinus motors failed.
+- Reading decoder data could have caused a COMException.
+
+New Firmware 4.12.9186 for LokSound V4.0 Decoders:
+- Added function key mapping for SUSI functions.
+
+New Firmware 2.0.1160 for SwitchPilot V2.0 and SwitchPilot Servo V2.0:
+- Improved compatibility with older servos.
+
+Version 4.4.14:
+===============
+- New decoder firmware 4.11.9184 for LokSound V4.0 and LokPilot V4.0 decoder.
+- Sound slot names have not been read with decoder data.
+
+Version 4.4.13:
+===============
+- Loading a decoder project could lead to a program crash.
+- Manual CV  input has not been shown after reading decoder data.
+
+Version 4.4.12:
+===============
+- Manual CV Input has not been displayed on M4 enabled decoders.
+- New default value for CV140 on LokSound V4.0, LokSound V4.0 M4 and LokSound micro V4.0.
+- Updated LokPilot V4.0 M4 default values.
+- New firmware for Test coach EHG388.
+- Added RailComPlus board light icon.
+
+Version 4.4.11:
+===============
+- Improved sound writing stability.
+- Corrected LokPilot V3.0 Fx firmware version number.
+- Updated LokPilot Standard firmware.
+- Added support for Smoke Unit (Gauge 0, G)
+- Added support for car light.
+- Removing function descriptions could have caused an exception.
+- Wave files may now imported via drag and drop from Windows Explorer.
+
+Version 4.4.10:
+===============
+
+Bugfixes:
+ - Some LokSound select decoder have not been detected.
+ - Back EMF sampling period has been shown on decoders without that function.
+ - Autmoatic uncoupling was not available in sound schedule states.
+ - Fixed a NullReference exception during LokSound V3.x file import.
+
+Decoder:
+ - New firmware for SwitchPilot Servo V2.0.
+ - Firmware 1.1.1379 for LokPilot Standard:
+   Improved function mapping and more logical functions.
+
+ - Firmware 4.11.9178 f�r LokSound XL V4.0: 
+   Added configuration of secondary smoke unit preheating temperature.
+
+Version 4.4.9:
+==============
+
+Bugfixes:
+  * Could not convert LokSound V3 sound without SD and DS states.
+  * Could not read SwitchPilot Servo decoder data.
+  * Added missing CV105 and CV106 to V3 decoder.
+
+Changes:
+  * Write sound function shows an error message if the project's sound is empty.
+
+New decoder firmware 4.10.9171:
+  * Sampling period of back EMF is now configurable.
+
+
+Version 4.4.8:
+==============
+Bugfixes:
+  * LokPilot XL V3.0: Added missing CV105 and CV106.
+  * Removed unsupported AC Analog settings from LokPilot 4.0 DCC PX.
+  * Fixed wrong 3 Point speed table template values for v3 Decoder.
+  * Copy / paste schedules with alternate samples could have caused an error.
+  
+New decoder firmware 4.9.9163:
+  - Automatic uncoupling is now controlled via a logical function.
+  - Sending servo pulse on decoder power on.
+
+Version 4.4.7:
+==============
+  Bugfix: SwitchPilot and LokPilot Basic Decoders could not be read.
+
+Version 4.4.6:
+==============
+- Bugfixes:
+  * Function mapping has not been refreshed after reading decoder data.  
+  * Decoder data has not been correctly evaluated when reading a decoder with and old firmware into an existing project.
+  * Fixed problems with LokPilot V4.0 firmware update.
+  * CV export from LokSound V4.0 M4 decoders included some wrong values.
+  * LokSound V3.x: Sound type(CV57) has been rest to 1.
+  * LokSound XL V3.5 firmware was not available.
+  * LokPilot FX V3.0 firmware update failed.
+  * Alternative samples have not been evaluated.
+  * LokSound V3.0: F10(r) missing in analog settings.
+  * Value of CV29 has not been changed after disabling analog modes via CV50.
+  
+- Changes:
+  * Improved sound editor overflow tabs.
+  * Added confirmation dialog when closing the software while a programming task is running.
+  
+New decoder firmware 4.8.9158:
+  * Fixed share register ">" comparison.
+
+Version 4.4.5:
+==============
+- Bugfixes:
+  * Opening My Computer or Netwoork Neighbourhood in the sound editor could have caused an error.
+  * Reading LokSound XL V4.0 decoders failed after firmware update.
+  * Decoder reset did not work with LokSound V3.0 M4 decoders.
+  * Writing factory defaults did not work on some V3.0 decoders.
+
+Version 4.4.4:
+==============
+- Bugfixes:
+ * Transitions did not connect to states when zoom is lower than 100%
+ * Read / write decoder buttons have not been reset after a certain write error.
+ * Manual CV input had wrong range n CV63.
+ * CV53 was missing on LokPilot Basic decoder.
+ * Some LokSound Select decoders have not been detected.
+ * Reading or writing decoder date could have caused an OverflowException.
+ * LokSound V3.0 M4 file import failed.
+
+- Firmware 4.8.9156 for V4.0 decoder: 
+ * Click sound has not been triggered correctly on high acceleration.
+
+Version 4.4.3:
+==============
+- Bugfixes:
+ * LokPilot V4.0 recognition did not work after writing the decoder. The decoder can be fixed using Tools -> Update decoder firmware.
+ * Could not open LokPilot Basic .esu files.
+ * Could not open SwitchPilot (2013) .esux files.
+ * LokPilot Fx V3.0: Could not configure reverse mode.
+ * Transition have not been remove correctly using the undo function.
+ 
+- New Features:
+  * Added support for LokSound V3.x decoder family.
+  * Added support for LokPilot Fx V4.0
+  * Turnout control panel takes the decoder address from the current project.
+  * State mapping support for acceleration, shunting mode and dynamic brake logical functions.
+
+Version 4.4.2:
+==============
+- Bugfixes:
+  * Reading some V4 decoders failed.
+  * Importing LokSound V3.x .esu files failed.
+  * LokPilot Basic .esux files could not be opened.
+  * LokPilot V3.0 M4 .esu files could not be opened.
+  * Second address of SwitchPilot decoders has not been read correctly.  
+  * Sound slot names have not been updated in the function mapping.
+  * LokPilot Fx V3.0 stopped working after writing factory defaults. Writing decoder data fixes the decoder.
+  * .wav file volume control did not react on keyboard input.
+
+- New features:
+  * Added sound project protection: Projects can be limited to one decoder.
+  * Added load control values for V3 decoders.
+  * CV number are now displayed with bit numbers.
+ 
+- Changes:
+  * "New project" window revised.
+  
+- Decoder firmware 4.7.9148:
+  * Servo control for LokPilot V4.0 decoders (in addition with 51970 I/O extension)
+
+Version 4.4.1:
+==============
+- New Features:
+  * New Decoders: LokPilot V4.0 M4 und LokPilot XL V4.0
+  * Added support for SwitchPilot decoders.
+  * Added support for LokPilot V3.0 decoders.
+  
+- Bugfixes:
+  * Shift function has not been simulated.
+  * Sample preview did not work with wave files that have a uppercase suffix.
+  * Directories with a name ending with ".wav" caused an error.
+
+Version 4.4.0:
+==============
+- New Features:
+  * Sound slots simulation: Play sound slots and templates on your PC.
+  * Register to register assignment is now supported by the sound editor.
+  * Mapping of some logical functions via the sound editor.
+  * Virtual driver's cab takes the decoder address from the current project.
+  * CVs which have been changed since the project has been opened / saved may now displayed in a list.
+    (Tools -> Show changed CVs) 
+        
+- Bugfixes:
+  * NullReferenceException during address detection.
+  * Virtual driver's cab crashed on overcurrent at the LokProgrammer.
+  * AccessViolations could occur when using Windows XP.
+
+- Changes:
+  * Virtual drivers' cab: Improved highlighting of active functions under Windows XP.
+  * KM1 Smoke Unit: Improved setting captions.
+
+- Decoderfirmware 4.7.9143:
+  * Reading CVs via POM did not work with some command stations (e.g. Hornby)
+  * Ignoring DriveLock Flag while automatic uncoupling
+
+Version 4.3.4:
+==============
+- New Features:
+  * Editing of Containers and States at the same time. (Mutiple selection)
+  * Extended decoder information at Read / Write CVs
+  
+- Bugfixes:
+  * Unsupported features of sound slots have been editable
+  * Mapping alternate output configurations by a state did not work
+  * Copy / paste of sound schedules of another LokProgrammer instance created to many samples
+  * Some unused samples have not been grayed out
+  * Schedule did not refresh after sound assignment via drag and drop
+  
+- Changes:
+  * Automatically removing white space characters at the start and end of state names
+  * The current template pack version is now checked at program start
+  * Improved conversion of LokSound V3.x steam sounds
+  * Improved conversion of LokSound V3.x brake sounds
+  
+- Decoder firmware version 4.7.9139
+  * Added a shared register which is accessible from all sound slots.  
+  * Manual notching function is now also assignable to sound slot 4 - 24.
+  * Sound controlled smoke generation using AUX outputs.
+
+Version 4.3.3:
+==============
+- New Features:
+  * Added physical output naming
+  
+- Bugfixes:
+  * Function icons could have been changed by the function mapping  
+  * Settings of the external controlled smoke unit have not been shown correctly  
+  * Writing decoder data has written wrong values to certain LokSound Select decoders
+  * Function mapping of LokSound XL V3.0 decoders has not been imported correctly
+  * Samples inside of containers have not been included while pasting a sound schedule
+  
+- Decoder firmware 4.6.9134:
+  * Volume control is now using six steps (32, 64, ..., 192)
+  * LokSound V4.0 M4 and LokSound XL V4.0: Volume control caused a new registration on M4 command stations
+  * LokSound XL V4.0: Secondary configuration of physical outputs (eg. AUX1 [2]) has not been working
+
+Version 4.3.2:
+==============
+- New Features:
+  * LokSound V3.0 M4 decoder import.
+  
+- Bugfixes:
+  * User ID CVs (CV105 and CV106) have not been displayed
+  * Speed table has not been adjusted while importing to a LokSound XL V4.0 or LokSound V4.0 M4 decoder
+  * LokSound V3.x steam locomotives with empty drive import has not been working
+  * Using templates as random sounds has not been working
+  * Locomotive informations have been deleted while changing decoder type from LokSound Select to LokSound Select direct / micro
+  * Writing CVs (vi Read / Write CVs) to a LokSound micro V4.0 decoder failed.
+  
+- Changes:
+  * Changed sound fader default value from 128 to 64
+
+Version 4.3.1:
+==============
+- New Features:
+  * Added support for Motorola F9-F16 (using 3rd and 4th address) to virtual driver's cab
+ 
+- Bugfixes:
+  * Speed table has not been updated correctly while updating decoder version
+  * Manual CV input has been missing on LokSound V4.0 M4 and LokSound XL V4.0 decoders    
+  * Importing decoders as LokSound V4.0 M4 or LokSound XL V4.0 has not been working
+  
+- Changes
+  * Changed name for Sensor 0 to Wheel sensor
+  
+Version 4.3.0:
+==============
+- New Features:
+  * Added support for LokSound V4.0 M4 and LokSound XL V4.0
+  * Added ESU Smoke unit settings for Steam locomotives
+  * Added country to project informations
+  * LokSound XL V3.5 projects
+  * A state may now contain up to 16 samples. Selection via CV48   
+  
+- Bugfixes:
+  * The DriveStop flag has not been working without having a sample assigned to the state
+  * Closing the program settings window could result to an error
+  
+- Changes:
+  * Revised manual CV input
+
+- Decoder Firmware 4.6.9129:
+  * 40 mapping rows instead 32
+  * Up to 4 motorola addresses, for using functions F0 - F16    
+  * New light effects, especially "neon light" and "low energy light"
+  * Constant brake distance may now be configured for forward and reverse direction. (Import for push-pull trains)  
+  * Unneeded protocols can be disabled via CV47
+  * New "manual notching" for diesel electric locomotives
+  * ABC brake mode: Threshold for brake section detection is now configurable
+
+Version 4.2.9:
+==============
+- Bugfixes:
+  * LED Mode has not always been visible
+  * Light Function in Analog Function has not been shown
+  * Removing mapping rows could cause an error
+ 
+- Changes:
+  * Showing a warning message when using a Prolific PL2303 USB adapter
+  * New default values for load control settings
+  
+- Decoder Firmware 4.5.9066
+  * Improved behavior with bad rail contacts
+
+Version 4.2.8:
+==============
+- Bugfixes
+  * Performing a complete decoder update could write the wrong firmware on a decoder.
+  * Decoder reset has not been working
+  * Maximum flash memory size has not been checked
+  * Adding the same sound slot template could cause a wrong sound slot assignment
+  
+- New features:
+  * .esux files can now be loaded via drag and drop on the main window
+  * Added motor preset settings for Softdrive C-Sinus motors
+
+Version 4.2.7:
+==============
+- Bugfix: State output mapping has not been written correctly
+
+Version 4.2.6:
+==============
+- New Features:
+  * State creation via Wave file drag and drop into the diagram sheet
+  * Wave file drag and drop into an empty sound slot creates a new sound schedule
+  * Simplyfied random sound schedules (only on new projects)
+
+- Bugfixes:
+  * Some sound schedules have not been fully visible on the diagram sheet
+  * Selection of a state with ESU smoke unit settings could cause an error
+  * Fixed problems with reading and writing CVs with foreign decoders
+  * Same wave files could be added multiple times when using templates
+
+Version 4.2.5:
+==============
+- New Features:
+  * LokPilot V3 Decoder import
+  * When trying to open an .esu file the import decoder dialog starts automatically
+  * Load control presets are now available via menu and toolbar
+  * Conversion from LokPilot to LokSound projects and vice versa
+  * Number of repetions can now be set for each state
+  
+- Bugfixes:
+  * Direction change did not work properly with imported LokSound V3 sounds. Projects must be imported
+    again to fix this.    
+  * New states have not always been shown in the visible area.
+  * Main windows has not been visible after the process has been quit via task manager
+  * Reading decoder data into an existing project could remove sound data.
+
+- Decoder Firmare 4.5.9054
+  * Some locomotives stopped after receiving a direction change
+  * New load control parameter: "I slow"
+
+Version 4.2.4:
+==============
+- New Feature:
+  * Automatic update of decoder informations when changing the function mapping
+
+- Bugfixes:
+  * Transitions with the same source and destination could have been overlapped by the state
+  * The directory treeview could not resolve shortcuts
+  * Fixed an error that occured when the project or the template directory could not be found.
+  
+- Changes:
+  * Added descriptions to the function icon selection
+  * The open and save dialogs start in the last used directory
+
+- Decoder firmware 4.4.9048: 
+  * Improved analogue mode detection
+
+Version 4.2.3:
+==============
+Bugfix: After performing a sound update no sound the decoder has not played any sounds.
+
+Version 4.2.2:
+==============
+- Bugfixes:
+  * Scrollbars in the sound schedule editor have not been displayed on Windows 7
+  * Sound slots without unique names have not been assigned correctly
+
+Version 4.2.1:
+===============
+- New Features:
+  * Removing and reordering of function mapping rows
+  * Added support for LokSound Select Direct and LokSound Select micro
+  * Overwriting sound files via Drag and Drop
+ 
+- Changes:
+  * The Navigation bar has now icons like v2.x.x
+ 
+- Bugfixes:
+  * Added missing translations in the state properties
+  * User interface has not been shown correctly when using large fonts.
+  * Uninstall.exe has benn shown as Folder in the Template library
+  * Transition properties have change during copy / paste or when saving as template
+  * Large RailComPlus function index numbers caused a program error
+  * Read LokSound Select decoder projects could not be saved
+
+Version 4.2.0:
+===============
+- New Features:
+  * LokSound V4.0 Sound schedule editing.
+  * Show CV Numbers in the user interface (enable via Tools -> Program settings...)
+  * Template Library: SoundSlot Templates which can be used in own projects. (LokSound Template Pack required)
+  * Decoder firmware version 4.4.9045
+    - Preserve speed and preserve function settings
+    - Pantograph control
+
+- Changes:
+  * Revised user interface
+  
+- Bugfix:
+  * Could not import LokSound micro V3.0 projects
+
+Version 4.1.5:
+===============
+- New Features:
+  * Per default decoder settings (CVs) get written on the decoder while writing sound data.
+  * The software now saves whether default values should be written on the decoder or not
+  * Added support for KM1 Smoke Unit
+   
+- Bugfixes:  
+  * Mute function has not been converted from LokSound V3.x to LokSound V4.0
+  * Converted fan sound has not started and ended correctly
+  * Sound speed hs not been adjusten on converted diesel mechanical locos
+  * Software could freeze while converting an .esu file containing a zero length wave file.
+  * "Stop sound" has not been converted correctly
+  
+- Changes:
+  * Improved description of the manual notching function
+  * Changed smoke unit description to clarify if the setting targets the ESU or Seuthe smoke unit 
+  * User interface controls will get loaded on first use
+  * Increased speed of decoder detection
+  * Changing short DCC Address to a valid value when programming a long DCC Address
+  * Startup wizard items are now ordered like in LokProgrammer 2.x.x
+  
+- Decoder firmware version 4.3.9008
+  * Improved driving characteristics in analogue mode.
+
+Version 4.1.4:
+==============
+- New Features:
+  * Automatic expansion of samples that are shorter than 65ms (loop)
+  
+- Bugfixes:
+  * Diesel an electric locomotive sounds with long transition samples have not been imported correctly
+  * Fan sound has not been imported correctly
+  * Could not import .esu files including multiple wave samples with the same name
+
+- Decoder firmware version 4.3.8991
+  * Improved load control for HAG and M�rklin motors
+  * ABC Reduced speed
+  * SUSI CV programming
+
+
+Version 4.1.3:
+==============
+- New Features:
+  * LokSound V3.x file import
+  * Support for LokPilot micro V4.0 and LokPilot micro V4.0 DCC 
+  * Startup wizard like in LokProgrammer 2.x.x
+  * Program language can be changed by user
+  * Decoder type of a project can be changed
+
+- Bugfixes:
+  * Faulty values in the speed table could cause an exception
+  * Added a confirmation dialog before restoring factory defaults using "Write firmware..."
+  * File name has not been updated after saving
+
+Version 4.1.2:
+==============
+- Bugfixes:
+  * Function Fallback values have not been written correctly
+  * CV17 missing in manual CV input
+  * Locomotive type could have been changed while using a system built-in icon
+  * Added missing PowerPack settings
+  
+- New Features:
+  * Added support for LokSound micro V4.0
+  * Restoring Window size and position on startup
+  
+- Decoder Firmware 4.2.8920 for LokSound V4.0, LokPilot V4.0 
+  and LokPilot V4.0 DCC. 
+  * Fixed problems with RailComPlus address assignment
+  
+Version 4.1.1:
+==============
+- New Features:
+  * LokProgrammer Setup is now creating a desktop icon
+  * Added support for RailComPlus
+
+- Bugfixes:
+  * Constante brake distance at speed step 0 could not be changed
+  * Project version has not been saved.
+  * Invalid values in the function mapping could cause a program error
+  
+- Firmware version 4.2.8916
+  * RailComPlus support f�r LokPilot V4.0, LokPilot V4.0 DCC and LokSound V4.0    
+
+Version 4.1.0:
+==============
+- LokPilot V4.0 Firmware (4.2.8892)
+  * Added starting delay / virtual drive sound
+  * Constant brake distance at speed step 0
+  * Added support for Writing CVs via Helper CVs (CV96-99)
+
+- New Features:
+  * LokSound BR215 is now supported
+  
+- Bugfixes:
+  * Could not update decoder firmware using PL2303 USB to serial adapter
+  * Speed table values have not been changed correctly
+  * Extendend DCC-Address values have not been changed correctly
+  * Decoder test: Turning of F1 in Motorola mode at speed step 1 and 2 did not work
+
+Version 4.0.1:
+==============
+- LokPilot V4.0 Firmware (4.1.8829):
+  * Automatic uncoupling is now working with different AUX-Outputs 
+  * Adaptive reguluation can be turned off to avoid motor humming.
+The firmware version is included in the software. Decoder will be updated automatically.
+
+- Bugfixes:
+  * PL2303 USB Driver installation did not start correctly
+  * Start menu entries are now created for all users.
+  * Extended address has not been written correctly.
+  
+- New Features:  
+  * LokSound select is now supported
+  * Added templates to the speed table
+  * Added manual cv input like in version 2
+  * Extended decoder information window
+  * Added support for additional decoder informations
+  * Decodertest can now detect the decoder's DCC address
