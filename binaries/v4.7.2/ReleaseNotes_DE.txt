@@ -1,0 +1,753 @@
+﻿LokProgrammer4 - Release Notes
+=============================================
+
+Version 4.7.2:
+==============
+- Bugfixes:
+  * Soundeditor - Template kopieren -> bei geschlossenem Templateordner fehlt der Bestätigungsdialog zum Überschreiben
+                  von Vorlagen mit gleichen Namen.
+- Essential Sound Unit:
+  * SoundCV Konfiguration - Design modifiziert.
+  * Zufallsfunktionen - Design modifiziert.
+- Soundeditor:
+  * Übergang - Triggerbedingung mit Wert anzeigen.
+- Motoreinstellungen:
+  * Lastregelung gruppiert.
+- Neue RailComPlus-Lokbilder.
+- Neue Firmware Version 4.17.9249 für LokSound V4, LokSound Select:
+  * Neue Funktion - Triggerimpulse halbieren, wenn Rangiergang aktiv (CV245.5). Sichtbar wenn "Externen Radsensor verwenden" aktiv.
+
+Version 4.7.1:
+==============
+- Bugfixes:
+  * LokSound V4 - Dampflok (Mehrkanal), Trigger-Bedingung bei bestehenden Projekten nicht vorhanden (abhängig von Soundablauf).
+                - Zustandseinstellungen -> Combobox Preset wird bei ESU Rauchgenerator nicht angezeigt.
+                - Soundabläufe mit Zustandsübergänge ohne Ziel können nicht gespeichert werden.
+  * Bremseinstellungen - einige CV Beschriftungen fehlen.
+- Soundeditor:
+  * Zustandsübergang - bei Bedingung true / false wird Wert mit true vorbelegt.
+- Neuer Decoder:
+  * Essential Sound Unit.
+
+Version 4.7.0:
+==============
+- Bugfixes:
+  * LokSound V3.5 Familie - Soundslot kann in Funktionszuordnung nicht zugewiesen werden.
+  * LokSound V3 - geänderter Soundslotname wird in Combobox (Sounds) nicht angezeigt, bzw. aktualisiert.
+  * LokPilot Basic, SwitchPilot - manuelle CV Eingabe fehlt.
+  * LokSound V4 - schreiben der Sounddaten von einem importierten LokSound V3 Projekt nicht möglich.
+  * LokPilot V3.0 DCC - öffnen oder importieren von .esu Dateien nicht möglich.
+  * LokSound V4 - beim Konvertieren in ein M4 Projekt werden gesetzte Haken der Spalte Moment nicht übernommen.
+  * LokPilot Nano Standard V1 - Decoderdaten schreiben nicht möglich.
+  * LokSound V4 / LokPilot V4 - Decoderdaten schreiben in Kombination mit Projektkonvertierung und Firmware schreiben nicht möglich.
+  * LokSound XL V4.0 - falsche Zuordnung der Soundslots beim Importieren eines .esu Projekts.
+  * Nach Löschen eines Soundslots wird der Soundslotname in 'Soundslot Konfiguration' und Combobox (Sounds) nicht aktualisiert.
+  * Nach Importieren eines Templates wird der Soundslotname in 'Soundslot Konfiguration' und Combobox (Sounds) nicht aktualisiert.
+  * Nach dem Ändern des Soundtyp konnte beim Bearbeiten eines Zustandes im Soundablauf eine NullReferenceException auftreten.
+- Neue Firmware Version 4.16.9248 für LokSound Micro V4, LokSound Select direct / micro:
+  * SUSI Unterstützung.
+- Erstellungsdatum auf Info Fenster.
+- Soundeditor:
+  * Scrollposition bleibt bei Zustandseinstellungen erhalten.
+  * Übersicht -> Kontextmenü - Soundslot löschen inaktiv, wenn ein Soundslot Tab geöffnet ist.
+	
+Version 4.6.2:
+==============
+- Neuer Decoder: Walthers ML8.
+- Menüpunkt Merkblatt speichern nur bei geöffnetem Projekt möglich.
+- Neue Firmware Version 4.16.9247 für LokSound V4, LokSound Select, LokPilot V4.0, Messwagen EHG388, Gesellschaftswagen WGye:
+  - Neue Funktion: CV179 bestimmt die Zeit von der Höchstgeschwindigkeit bis zum Stillstand, wenn logische Funktion "Dynamische Bremse" aktiv.
+- Neue Firmware Version 1.2.1415 für LokPilot Standard, LokPilot Nano:
+  - Bugfix: CV4 inaktiv, wenn virtuelles Fahrgeräusch aktiviert.
+
+Version 4.6.1:
+==============
+- Einlesen eines Projekts ohne CV Übernahme zeigte keine Konfigurationsoberfläche an.
+- Scrollbalken im Zustandseditor wurde in englischer Version nicht angezeigt.
+- NullReferenceException in Extras -> Firmware aktualisieren behoben.
+- Automatisches Firmwareupate auf Decoder ohne Firmware, wenn Sound und CVs geschrieben werden.
+- Range-Parameter wurden vom Soundsimulator nicht ausgewertet.
+- Ändern des Fahrtrichtungsabhängig Werts im M4 Mapping konnte eine Exception auslösen.
+- Anzeige der Funktionstastenbeschreibung als Tooltip im Mapping.
+- Zustand Farbe wurde bei Sound Sample-Zuordnung per Drag and Drop nicht immer aktualisiert.
+- Sample-Zuordnung per Drag and Drop änderte den falschen Zustand, wenn mehrere Zustände die auf der selben Position liegen.
+
+Version 4.6.0:
+==============
+- Neue Benutzeroberfläche für den Soundsimulator.
+
+Version 4.5.3:
+==============
+- Neue Firmware für LokSound V4, LokPilot V4: 4.15.9246, LokPilot Standard: 1.2.1408 und Digital-Innenbeleuchtung: 1.0.1461.
+  - Unterstützung für Consist Control Befehle via Broadcast.
+  - "Drive Hold" Funktion für LokPilot Decoder.
+- LokSound 3 Soundslot Namen wurden in der Funktionszuordnung falsch angezeigt.
+- Unterstützung für Bachmann MK2F.
+- Soundslot funktionierte nicht für Additional Sounds bei LokSound Select.
+- Darstellungsprobleme bei benutzerdefinierter Skalierung / Großer Schrift behoben.
+- Probleme beim Sound Schreiben mit neueren LokSound V4.0 Decodern behoben.
+
+Version 4.5.2:
+==============
+- Manuelle CV Eingabe wurde bei Decodern ohne CVs angezeigt.
+- Einige LokSound V3.0 M4 Dateien zeigten beim Öffnen den Konvertierungsdialg an, anstatt das Projekt zu öffnen.
+- Firmware Version 1.0.1460 für MBW Silberling.
+- Virtueller Führerstand und CVs lesen / schreiben werden während der Decoderprogrammierung deaktiviert.
+- Name von SoundSlot 2 bei LokSound Select Projekten wurde nicht richtig angezeigt.
+- Verhalten der Tastaturbedienung von Momentfunktionen im virtuellen Führerstand korrigiert.
+- LokPilot Nano FX Firmware 1.2.1407: Unterstützung für Motorola Protokoll.
+- Gesellschaftswagen WGye Firmware 4.15.9243: Speicherung der aktuellen Lautstärke.
+- Formatierung des Merkblatts für lange Decoderbeschreibung angepasst.
+
+Version 4.5.1:
+==============
+- Ausgangskonfiguration Roco Kupplung wurde bei LokPilot V4.0 DCC nicht angezeigt.
+- Firmware Version 1.2.1405 für LokPilot Standard Nano und LokPilot Standard Nano Fx.
+
+Version 4.5.0:
+===============
+- Virtueller Führerstand übernimmt Momentfunktion Einstellungen des aktuellen Projekts.
+- Soundauswahl CV wird jetzt auch in der Soundslot Liste dargestellt.
+- Fehler in der Soundslotvorschau bei LokSound Select behoben.
+- Zustände im Soundablauf können jetzt am Raster ausgerichtet werden.
+- Kommentare zu Soundablauf hinzugefügt.
+- Größe von Start- und Endzuständen ist jetzt änderbar.
+- Einfügen im Soundablauf berücksichtigt nun die aktuell dargestelle Position.
+- Erweiterte Decoderinformationen zeigen jetzt auch die Größe des Flash Speichers an.
+- esux Dateien von nicht-aktualisierbaren Decoder konnten nicht geöffnet werden.
+- LokSound Firmware 4.15.9240: Last- und Leerlaufbetrieb.
+
+Version 4.4.25:
+===============
+- Fehlerhafte Auswertung von Konstanten mit "-" oder "+" im Namen korrigiert.
+
+Version 4.4.24:
+===============
+- Darstellung von Soundslot- und Ausgangskonfiguration verbessert.
+- Darstellung der Funktionssymbolde des aktuellen Projekts im virutellen Führerstand.
+- In der Soundslotsimulation wird jetzt der aktive Zustand hervorgehoben.
+- Probleme mit "Geändert" Status behoben.
+- Verbesserte Kompatibilität mit LokSound XL V3.5 (Piko Version)
+- Neue Firmware für ScaleTrains Tenderlight und Digital-Innenbeleuchtung
+
+Version 4.4.23:
+===============
+- Fehler behoben, der beim Firmwareupdate zu einer ungültigen Konfiguration führen konnte.
+
+Version 4.4.22:
+===============
+- Fehler behoben der beim Update eines LokSound Select Decoders von Firmware Version 4.14.9202 oder 4.14.9217 zu einer falschen Decoderkonfiguration führte.
+
+Version 4.4.21:
+===============
+- Neue RailComPlus-Lokbilder (für Mobile Control II) hinzugefügt.
+- LokPilot V3.0 FX Firmware Version korrigiert.
+- LokPilot V3.0 RailCom Einstellungen korrigiert.
+- Lokadresse wird jetzt im Merkblatt abgespeichert.
+- Fehler "Decoderversion n/a wird nicht unterstützt" behoben.
+- Automatische anpassung des Projekttyps auf den Zieldecoder. (Kann unter Einstellungen -> Automatische Decodertypanpassung deaktiviert werden.)
+- Unterstützung für Scale Trains Tender Light.
+- Unterstützung für Gesellschaftswagen WGye
+- Unterstützung für LokPilot Standard Nano V1.0
+
+Version 4.4.20:
+===============
+- Mappingindikator für Shift Funktion.
+- Leere Container zeigten alle Mappingindikatoren an.
+- Exception beim Ändern der Zoomstufe behoben.
+
+Version 4.4.19:
+===============
+- LokSound Select L wird jetzt unterstützt.
+- Mapping von AUX-, logischen und Soundfunktionen wird jetzt an Zuständen durch farbige Markierung dargestellt.
+- Symbole zur Darstellung von Zustandsmapping und Share-Benutzung zur Soundübersicht hinzugefügt.
+- Falschen Text im Bereich Geschwindigkeitsanzeige bei EHG388 korrigiert.
+- Fehler im Soundsimulator behoben, der anstatt dem Register Share das Register Timer 1 geändert hat.
+
+Version 4.4.18:
+===============
+- CV Nummern von Tachometereinstellungen wurden nicht angezeigt.
+- Firmware 2.0.1163 für SwitchPilot V2.0 / SwitchPilot Servo V2.0: Periode der Servoimpulse auf 32 ms erhöht.
+- Firmware 4.14.9217 für die V4.0 Decoderfamilie:
+  - Neuer Effekt "Random Strobe" z.B. Amtrak Lokomotiven
+  - LokPilot V4.0 Motor PWM Frequenz korrigiert. 
+
+Version 4.4.17:
+================
+- Unterstützung für LokSound L V4.0
+- Warnhinweise für ungültige Konfiguration von AUX5 bzw. AUX6 hinzugefügt (nur LokSound V4.0)
+- Beim Speichern einer 1-Kanal Dampflok konnte ein Fehler auftreten.
+- Servoausgänge wurden nicht immer korrekt dargestellt.
+- Falsche CV Zuordnungen bei LokPilot V3.0 OEM korrigiert.
+
+Firmware 4.14.9202:
+- Unterstützung für Analogsensoren (Nur LokSound XL V4.0).
+- CV für Sofort stoppen (Emergency Stop) bei Fahrstufe 0.
+- Geschwindigkeitsanzeige ist jetzt konfigurierbar (Nur EHG388 Messwagen).
+
+
+Version 4.4.16:
+===============
+- Innenbeleuchtung Firmware Version 0.0.1446 konnte nicht eingelesen werden.
+- SwitchPilot V2.0 Firmware 2.0.1160 fehlte.
+- Bei Funktionsausgängen wurde die Option (deaktiviert) nicht angezeigt, wenn der Decoder eingelesen wurde.
+
+Version 4.4.15:
+===============
+- CVs von LokSound XL V4.0 Decodern wurden falsch eingelesen, wenn auf dem Decoder Firmware 4.10 oder älter installiert war.
+- Einige Decoder reagierten nach Firmwareupdate über Extras -> Firmware nicht auf Fahrbefehle.
+- Wenn das Mapping nicht automatisch für C-Sinus Motor angepasst werden konnte, wird jetzt eine Meldung angezeigt.
+- Beim Auslesen der Decoderdaten konnte eine COMException ausgelöst werden.
+
+Neue Firmware 4.12.9186 für LokSound V4.0 Decoder:
+- Funktionstastenzuordnung für SUSI Funktionen.
+
+Neue Firmware 2.0.1160 für SwitchPilot V2.0 und SwitchPilot Servo V2.0:
+- Verbesserte Kompatibiltät mit alten Servos.
+
+
+Version 4.4.14:
+===============
+- Neue Decoderfirmware 4.11.9184 für LokSound V4.0 und LokPilot V4.0 Decoder.
+- Soundslot Namen wurden nach dem Einlesen eines Decoders nicht angezeigt.
+
+Version 4.4.13:
+===============
+- Laden eines Decoderprojekts führte zu einem Absturz, wenn Programmsprache auf englisch gestellt ist.
+- Manuelle CV Eingabe wurde nicht immer angezeigt, wenn ein Decoder eingelesen wurde.
+
+Version 4.4.12:
+===============
+- Manuelle CV Eingabe wurde bei M4 Decodern nicht angezeigt.
+- Neuer Standardwert für CV140 für LokSound V4.0, LokSound V4.0 M4 und LokSound micro V4.0.
+- Standardwerte von LokPilot V4.0 M4 aktualisiert.
+- Neue Firmware für Messwagen EHG388.
+- RailcomPlus Symbol für Fahrpultbeleuchtung hinzugefügt.
+
+Version 4.4.11:
+===============
+- Verbesserte Stabilität beim Schreiben der Sounddaten.
+- Versionsnummer von LokPilot Fx V3.0 Firmware korrigiert.
+- Nicht vorhanden Ausgang AUX4 von LokPilot micro Fx V3.0 entfernt. 
+- Aktualisierte LokPilot Standard Firmware.
+- Unterstützung für Nachrüstmarkt Raucherzeuger (Spur 0, G).
+- Unterstützung für Wagenbeleuchtung.
+- Unterstützung für Messwagen.
+- Löschen der Beschreibung einer Funktionstaste konnte einen Fehler auslösen.
+- Wave Dateien können jeztzt aus dem Explorer via Drag and Drop importiert werden.
+
+Version 4.4.10:
+===============
+
+Bugfixes:
+ - Einige LokSound Select Decoder wurden nicht erkannt.
+ - Abtastrate der Lastregelung wurde auch bei Decodern angezeigt, welche die Funktion nicht unterstützen.
+ - Kupplungswalzer konnte nicht im Soundablauf verwendet werden.
+ - Beim Import von LokSound V3.x Dateien konnte eine NullReferenceException auftreten.
+
+Decoder:
+ - Neue Firmware für SwitchPilot Servo V2.0.
+ - Firmware 1.1.1379 für LokPilot Standard:
+   Verbesserte Funktionszuordnung und mehr logische Funktionen.
+
+ - Firmware 4.11.9178 für LokSound XL V4.0: 
+   Vorheiztemperatur für sekundäre Rauchgeneratoren kann jetzt konfiguriert werden.
+
+Version 4.4.9:
+==============
+
+Bugfixes:
+  * LokSound V3 Dateien ohne SD und DS samples konnten nicht konvertiert werden.
+  * SwitchPilot Servo konnte nicht eingelesen werden.
+  * Fehlende CV105 und CV106 zu V3 Decoder hinzugefügt.
+
+Änderungen:
+  * Sound schreiben zeigt jetzt eine Fehlermeldung an, wenn kein Sound im Projekt vorhanden ist.
+
+Neue Decoderfirmware 4.10.9171:
+  * Abtastperiode der Lastregelung kann jetzt konfiguriert werden.
+
+Version 4.4.8:
+==============
+Bugfixes:
+  * LokPilot XL V3.0: CV105 and CV106 hinzugefügt.
+  * Nicht unterstützte AC Analog Einstellungen von LokPilot 4.0 DCC PX entfernt.
+  * Werte für Drei Punkt Geschwindigkeitstabelle wurden bei V3 Decoder nicht korrekt aus den Vorlagen übernommen.
+  * Kopieren und Einfügen von Soundabläufen mit alternativen Samples konnte einen Fehler verursachen.
+  
+Neue Decoderfirmware 4.9.9163:
+  - Automatische Entkuppeln wirde jetzt mit der logischen Funktion "Kupplungswalzer" gesteuert. 
+  - Decoder sendet jetzt einen Servoimpuls beim Einschalten.
+
+Version 4.4.7:
+==============
+ Bugfix: SwitchPilot und LokPilot Basic Decoder konnten nicht gelesen werden.
+
+Version 4.4.6:
+==============
+- Bugfixes:
+  * Die Funktionszuordnung wurde nicht immer aktualisiert, nachdem Decoderdaten eingelesen wurden,
+  * Beim einlesen eines Decoders mit älterer Firmware in ein geladenes Projekt wurden die Daten falsch ausgewertet.
+  * Firmwareupdate Probleme mit LokPilot V4.0 behoben. 
+  * CV Export zeigte bei V4.0 M4 Decodern falsche Werte an.
+  * LokSound V3.x: Soundtyp (CV57) wurde immer auf 1 zurückgesetzt.
+  * Firmwareupdate bei LokSound XL V3.5 Decoder war nicht möglich.
+  * Firmwareupdate bei LokPilot FX V3.0 funkktionierte nicht.
+  * Alternative Samples in Containern wurden nicht ausgewertet.
+  * CV Anzeige für "AUX3 + 4 Verstärken" fehlte.
+  * LokSound V3.0: F10(r) fehlte in Analogeinstellungen.  
+  * CV29 wurde nicht gelöscht, wenn beide Analogmodi in CV50 deaktiviert wurden.
+  
+- Änderungen
+  * "Überlaufmenü" im Soundeditor verbessert.
+  * Abfrage beim Schließen während eine Programmieraufgaben ausgeführt wird. 
+  
+Neue Decoderfirmware 4.8.9158:
+  * Vergleichsoperator ">" für Share Register wurde falsch ausgewertet.
+
+Version 4.4.5:
+==============
+- Bugfixes:
+  * Öffnen von Computer (Arbeitsplatz) bzw. Netzwerkumgebung im Soundeditor konnte einen Fehler auslösen.
+  * LokSound XL V4.0 Decoder konnten nach Firmwareupdate nicht eingelesen werden.
+  * Decoder zurücksetzten funktionierte nicht mit V3.0 M4 Decodern.
+  * Werkswerte wurden bei einigen V3 Decoder nicht korrekt geschrieben.  
+
+Version 4.4.4:
+==============
+- Bugfixes:
+ * Zustandsübergänge rasten bei Zoom < 100% nicht ein.
+ * Schaltflächen für Decoderdaten lesen / -schreiben wurden nicht korrekt zurückgesetzt.
+ * Falscher Wertebereich für CV63 in manueller CV Eingabe.
+ * CV53 bei LokPilot Basic fehlte.
+ * Einige LokSound Select Decoder wurden nicht erkannt.
+ * Beim lesen und schreiben von Decoderdaten konnte eine Overflow Exception auftreten.
+ * LokSound V3.0 M4 Dateien konnten nicht importiert werden.
+ * Lautstärkeregler für .wav Dateien reagierten nicht auf Tastatureingaben.
+
+- Firmware 4.8.9156 für V4.0 Decoder: 
+ * Schaltgeräusch wurde bei hoher Beschleunigung nicht korrekt ausgelöst.
+
+Version 4.4.3:
+==============
+- Bugfixes:
+ * LokPilot V4.0 M4 Anmeldung funktionierte nicht, nachdem der Decoder beschrieben wurde. Der Fehler kann mit Extras -> Decoderfirmware aktualisieren behoben werden.
+ * LokPilot Basic .esu Dateien konnten nicht geöffnet werden.
+ * SwitchPilot (2013) .esux Dateien konnten nicht geöffnet werden.
+ * LokPilot Fx V3.0: Reversebetrieb konnte nicht konfiguriert werden.
+ * Zustandsübergänge wurden bei Undo nicht korrekt entfernt.
+ 
+- Neue Features:
+  * Unterstützung für LokSound V3.x Decoderfamilie.
+  * Unterstützung füt LokPilot Fx V4.0.
+  * Decoderadresse wird jetzt in das Weichenstellpult übernommen.
+  * Logische Funktionen: Beschleunigung, Rangiermodus und Dynamische Bremse können jetzt von Zuständen gemappt werden.
+
+Version 4.4.2:
+==============
+- Bugfixes:
+  * Einige V4 Decoder wurden nicht erkannt.
+  * LokSound V3.x Datei Import ist fehlgeschlagen.
+  * LokPilot Basic .esux Dateien konnten nicht geöffnet werden.
+  * LokPilot V3.0 M4 .esu Dateien konnten nicht geöffnet werden.
+  * Zweite Adresse von SwitchPilot Decoder wurde nicht korrekt eingelesen
+  * SoundSlot-Namen wurden teilweise nicht im Function Mapping aktualisiert
+  * LokPilot Fx V3.0 Funktionierte nicht, nachdem Werkswerte geschrieben wurden. Decoderdaten schreiben behebt den Fehler.
+
+- Neue Features:
+  * Soundprojekte können jetzt auf einen Decoder beschränkt werden.
+  * Lasteregelungsparameter für V3.x Decoder hinzugefügt
+  * CV Darstellung zeigt jetzt die Bitnummer an.
+ 
+- Änderung:
+  * "Neues Projekt" Fenster überarbeitet.
+  
+- Decoderfirmware 4.7.9148:
+  * Servosteuerung für LokPilot V4.0 Decoder (benötigt 51970 I/O Erweiterungsplatine) 
+
+Version 4.4.1:
+==============
+- Neue Features:
+  * Neue Decoder: LokPilot V4.0 M4 und LokPilot XL V4.0.
+  * Unterstützug für SwitchPilot Decoder.
+  * Unterstützung für LokPilot V3.0 Decoder.
+  
+- Bugfixes:
+  * Shift-Funktion wurde nicht simuliert.
+  * Wave Dateien mit großgeschriebener Dateiendung konnten nicht vorgehört werden.
+  * Verzeichnisse, deren Name auf ".wav" endet habe einen Fehler verursacht.
+
+Version 4.4.0:
+==============
+- Neue Features:
+  * SoundSlot Simulation: SoundSlots und Vorlagen können jetzt am PC simuliert werden.
+  * Unterstützung für Register- / Registerzuweisungen im Soundeditor.
+  * Einige logische Funktionen können jetzt aus dem Soundablauf aktiviert werden.
+  * Die Adresse im virtuellen Führerstand wird jetzt automatisch aus dem Projekt übernommen
+  * CVs, die seit dem Öffnen / Speichern geändert wurden können jetzt in einer Liste angezeigt werden.
+    (Extras -> geänderte CVs anzeigen)
+    
+- Bugfixes:
+  * Die Adresssuche im virtuellen Führerstand konnte eine NullReferenceException verursachen.
+  * Virtueller Führerstand stürtzte bei einem Kurzschluss am LokProgrammer ab.
+  * Unter Windows XP konnten AccessViolations auftreten.
+
+- Änderungen:
+  * Aktivierte Funktionen werden unter Windows XP mit VisualStyles besser hervorgehoben.
+  * KM1 Smoke Unit: Beschreibung der Einstellungen verbessert.
+
+- Decoderfirmware 4.7.9143
+  * CV Lesen über Hauptgleisprogrammierung (POM) funktionierte nicht mit einigen Zentralen (z.B. Hornby)
+  * DriveLock Flag wird jetzt während des Kupplingswalzers ignoriert.
+
+Version 4.3.4:
+==============
+- Neue Features:
+  * Container und Zustände können gemeinsam bearbeitet werden
+  * Erweiterte Decoderinformationen in Menü CVs lesen / schreiben
+
+- Bugfixes:
+  * In Soundslots konnten nicht unterstützte Funktionen eingestellt werden
+  * Alternative Ausgangskonfiguration wurden im Soundablauf nicht korrekt zugeordnet
+  * Kopieren und Einfügen von Zuständen aus einer anderen LokProgrammer Instanz erzeugte zu viele Samples
+  * Unbenutzte Samples wurden teilweise nicht ausgegraut
+  * Ablaufdiagramm wurde nach Soundzuordnung via Drag and Drop nicht aktualisiert
+  
+- Änderungen:
+  * Leerzeichen am Anfang und Ende von Zustandsnamen werden jetzt automatisch entfernt
+  * Template Pack Version wird ab jetzt bei Programmstart überprüft
+  * Konvertierung von LokSound V3.x Dampflok Sounds verbessert.
+  * Konvertierung von LokSound V3.x Bremsgeräusch verbessert.
+  
+- Decoderfirmware Version 4.7.9139
+  * Gemeinsames Register für alle Soundslots (Shared) hinzugefügt
+  * Einfluß von Manual Notching kann jetzt für Soundslots 4-24 aktiviert werden
+  * Soundgesteuerte Rauchgenerator an AUX Ausgängen
+
+Version 4.3.3:
+==============
+- Neue Features:
+  * Physikalische Ausgänge können benannt werden
+  
+- Bugfixes:
+  * Funktionssymbole konnten durch Mappingänderungen übschrieben werden
+  * Einstellungen für Rauchgenerator mit externer Steuerplatine wurden nicht korrekt dargestellt
+  * Auf einen LokSound Select Decoder konnten falsche Werte geschrieben werden
+  * Funktionszuordnung von LokSound XL V3.0 Decoder wurde nicht korrekt importiert
+  * Samples, die sich innerhalb eines Containers befinden wurden bei Kopieren und Einfügen nicht übernommen  
+  
+- Decoder Firmware 4.6.9134  
+  * Lautstärkeregelung regelt jetzt in sechs Schritten (32, 64, .., 192)
+  * LokSound V4.0 M4 und Loksound XL V4.0: Lautstärkeregelung führte zu einer Neuanmeldung an M4 Zentralen
+  * LokSound XL V4.0: Zweite Konfiguration (z.B. AUX1[2]) der physikalischen Ausgänge funktionierte nicht
+
+Version 4.3.2:
+==============
+- Neue Features:
+  * Import von LokSound V3.0 M4 Projekten
+  
+- Bugfixes:
+  * Benutzeridentifikation (CV105 und CV106) wurde nicht angezeigt
+  * Die Geschwindigkeitstabelle wurde beim Import zu einem LokSound XL V4.0 oder LokSound V4.0 M4
+    nicht angepasst
+  * LokSound V3.x Dampfloks mit leerem Fahrgeräusch konnten nicht importiert werden
+  * Schreibfehler in "Manuelle CV Eingabe" korrigiert
+  * Templates konnten nicht als Zufallsgeräusche verwendet werden
+  * Lokinformationen wurden gelöscht, wenn der Decodertyp von LokSound Select in LokSound Select direct / micro geändert wurde
+  * Auf LokSound micro V4.0 Decoder konnten keine einzelnen CVs geschrieben werden
+  
+- Änderungen:
+  * Standardwert für Soundfader von 128 in 64 geändert  
+
+Version 4.3.1:
+==============
+- Neue Features:
+  * Virtueller Führerstand unterstützt jetzt F9-F16 über 3. und 4. Adresse im Motorola-Modus
+ 
+- Bugfixes:
+  * Beim Update der Decoderversion wurde die Geschwindigkeitstabelle nicht angepasst
+  * Manuelle CV Eingabe wurde nicht bei LokSound V4.0 M4 und LokSound XL V4.0 angezeigt
+  * Decoderimport als LokSound V4.0 M4 und LokSound XL V4.0 funktionierte nicht
+  
+- Änderungen
+  * Sensor 0 in Radsensor umbenannt
+
+Version 4.3.0:
+==============
+- Neue Features:
+  * Unterstützung für LokSound V4.0 M4 und LokSound XL V4.0
+  * ESU Rauchgeneratoreinstellungen für Dampfloks
+  * Ursprungsland zu Projektinformationen hinzugefügt
+  * Import von LokSound XL V3.5 Projekten
+  * Es können jetzt bis zu 16 Samples pro Zustand angegeben werden, Auswahl via CV48
+  
+- Bugfixes:
+  * DriveStop Flag wurde bei Zuständen ohne Sample nicht berücksichtigt
+  * Beim Schließen der Programmeinstellungen konnte ein Fehler auftreten
+  
+- Änderungen:
+  * Manuelle CV Eingabe überarbeitet
+
+- Decoder Firmware 4.6.9129
+  * 40 Mapping Zeilen anstatt bisher 32
+  * Bis zu 4 Motorola Adressen, so dass z.B. mit 6021 die Funtkionen F0 - F16 ausgelöst werden können
+  * Neue Lichteffekte, insbesondere "Neonlicht" und "Energiesparlampe"
+  * Der konstante Bremsweg kann für Vorwärts- und Rückwärtsfahrt getrennt eingestellt werden (Eichtig für Wendezüge)
+  * Nicht benötigte Protokolle können via CV47 abgeschaltet werden
+  * Neues "Manual Notching" für Dieselelektrische Lokomotiven
+  * ABC Bremsmodus: Erkennungsempfindlichkeit kann eingestellte werden (wichtig für micro Decoder)
+
+Version 4.2.9:
+==============
+- Bugfixes:
+  * LED Modus wurde nicht angezeigt
+  * Licht unter "Aktivierte Funktionen im Analogmodus" wurde nicht immer angezeigt
+  * Löschen von Mappingzeilen konnte einen Fehler hervorrufen
+ 
+- Änderung:
+  * Bei Verwendung eines Prolific PL2303 USB Adapter wird jetzt eine Warnung angezeigt
+  * Neue Standardwerte für Lastregelparameter   
+  
+- Decoder Firmware 4.0.9066
+  * Verbessertes Fahrverhalten bei schlechten Schienenkontakten
+
+Version 4.2.8:
+==============
+- Bugfixes:
+  * Die Funktion Decoder vollständig neu programmieren konnte eine falsche Firmware 
+    auf den angeschlossenen Decoder schreiben.
+  * Decoder Rest funktionierte nicht
+  * Die maximale Speichergröße des Decoders wurde nichtberücksichtigt
+  * Mehrfach verwendete Soundslot Vorlagen konnten dazu führen, dass ein falscher
+    Sound wiedergegeben wird.
+    
+- Neue Features:  
+  * .esux Dateien können jetzt via Drag and Drop auf das Hauptfenster geöffnet werden  
+  * Lastregelparameter für Softdrive C-Sinus Motoren hinzugefügt      
+
+Version 4.2.7:
+==============
+- Bugfix: Ausgangskonfiguration wurde nicht korrekt geschrieben
+
+Version 4.2.6:
+==============
+- Neue Features:
+  * Wird eine Wave-Datei auf die Diagrammfläche gezogen, wird jetzt automatisch ein Zustand erzeugt
+  * Wird eine Wave-Datei auf einen leer SoundSlot in der Übersicht gezogen, wird automatisch ein 
+    Soundablauf erzeugt.
+  * Soundablauf für Zufallsgeräusche vereinfacht (nur neue Projekte)
+  
+- Bugfixes:
+  * Große Ablaufdiagramme wurden nicht vollständig angezeigt
+  * Auswahl eines Zustand mit Einstellungen für ESU Rauchgenerator konnte einen Fehler auslösen
+  * Probleme beim CV Lesen / Schreiben mit Fremddecodern behoben. 
+  * Gleiche Wavedateien wurden bei Verwendung einer Vorlage mehrfach zum Projekt hinzugefügt  
+
+Version 4.2.5:
+==============
+- Neue Features:
+  * Import von LokPilot V3 Decodern
+  * Decoderimport wird jetzt automatisch beim Öffnen einer .esu Datei angezeigt
+  * Lastregelungseinstellungen sind jezt auch über das Menü und die Symbolleiste erreichbar
+  * LokPilot Projekte können jetzt in LokSound Projekte umgewandelt werden und umgekehrt
+  * Anzahl Wiederholungen eines Zustands kann jetzt eingestellt werden
+  
+- Bugfixes:
+  * Bei importierten Dampfloks aus LokSound V3 Projekten hat der Richtungswechsel nicht korrekt funktioniert. 
+    Um den Fehler zu beheben, muss das entsprechende Projekt neu konvertiert werden.
+  * Neue Zustände werden jetzt immer im sichtbaren Bereich angelegt.
+  * Nach einem Programmfehler wurde das Hauptfenster teilweise nicht angezeigt
+  * Beim Decoderdaten übernehmen wurden in manchen Fällen die Sounddaten aus dem Projekt entfernt
+
+- Decoder Firmare 4.5.9054
+  * Einige Lokomotiven konnten nach einer Richtungsumkehr stehenbleiben
+  * Neuer Regelparameter: "I slow"
+
+Version 4.2.4:
+==============
+- Neue Features:
+  * Automatische Anpassung der Decoderinformationen bei der Funktionszuordnung
+
+- Bugfixes:
+  * Zustandsübergänge mit dem selben Quell- und Zielzustand konnten vom Zustand überdeckt werden
+  * Der Verzeichnisbaum im Soundeditor konnte keine Verknüpfungen auswerten
+  * Fehler bei nicht gefundenen Projekt- oder Vorlagenverzeichnissen behoben
+  
+- Änderungen:
+  * Bei der Auswahl der Funktionssymbole wird jetzt eine Beschreibung angezeigt
+  * Die Öffnen und Speichern Dialoge starten jetzt im zuletzt verwendeten Verzeichnis
+
+- Decoder Firmware 4.4.9048: 
+  * Verbesserte Analogmodus-Erkennung
+
+Version 4.2.3:
+===============
+Bugfix: Nach einem Soundupdate werden keine Geräusche abgespielt.
+
+Version 4.2.2:
+===============
+- Bugfixes:
+  * Unter Windows 7 wurden keine Bildlaufleisten im Soundablaufeditor angezeigt
+  * Soundslots ohne eindeutige Namen wurden nicht korrekt zugeordnet
+
+Version 4.2.1:
+===============
+- Neue Features:
+  * Verschieben und löschen von Zeilen in der Funktionszuordnung
+  * Unterstützung für LokSound Select micro und LokSound select direct
+  * Sounds können jetzt via Drag and Drop überschrieben werden
+ 
+- Änderungen:
+  * In der Navigationsleiste werden jetzt Symbole wie in v2.x.x angezeigt
+ 
+- Bugfixes:
+  * Darstellungsfehler unter Verwendung großer Schriftarten behoben
+  * In der Template Library wurde die Datei uninstall.exe als Ordner angezeigt
+  * Prioritäten von Zustandsübergängen wurden beim Kopieren sowie beim Erstellen
+    einer Vorlage falsch übernommen
+  * Große Indizes für RailComPlus Symbole konnten einen Fehler auslösen
+  * Eingelesene LokSound Select Projekte konnten nicht gespeichert werden
+
+Version 4.2.0:
+===============
+- Neue Features:
+  * LokSound V4.0 Soundablauf kann jetzt bearbeitet werden.
+  * Anzeige von CV Nummer in der Oberfläche (Kann unter Extras -> Programmeinstellungen aktiviert werden)
+  * Template Library: SoundSlot Vorlagen, die mit wenigen Mausklicks in eigene Projekte
+    übernommen werden können (Benötigt das LokSound Template Pack)
+  * Decoderfirmware Version 4.4.9045
+    - Speicherung von Geschwindigkeit und Funktionstastenstatus
+    - Ansteuerung von Pantographen
+
+- Änderungen:
+  * Benutzeroberfläche überarbeitet
+  
+- Bugfix:
+  * LokSound V3.0 micro Projekte konnten nicht importiert werden
+
+Version 4.1.5:
+===============
+- Neue Features:
+  * Beim Soundschreiben werden jetzt Standardmäßig auch Decoderdaten (CVs) geschrieben
+  * Die Software speichert jetzt, ob Werkswerte geschrieben werden sollen oder nicht
+  * Unterstützung für KM1 Nachrüstmarkt Smoke Unit
+   
+- Bugfixes:  
+  * Mute Funktion wurde bei Import nicht korrekt übernommen
+  * Konvertierter Lüftersound wurde nicht richtig gestartet und beendet.
+  * Das Fahrgeräusch von konvertierten Diesellokomotiven mit Schaltgetriebe wurde nicht 
+    an die Geschwindigkeit angepasst.
+  * Programm konnte bei der Konvertierung einfrieren, wenn ein 0 Byte Sample in der .esu Datei ist
+  * Stop Sound wurde nicht korrekt konvertiert.
+  
+- Änderungen:
+  * Beschreibung der Grade Crossing Funktion geändert
+  * Beschreibung der Manual Notching Funktion verbessert.
+  * Beschreibungen der Rauchgenerator Einstellungen geändert, so dass der Unterschied
+    zwischen ESU und Seuthe Rauchgenerator ersichtlich ist.
+  * Oberfläche: Steuerelemente werden erst geladen, wenn sie auch benötigt werden
+  * Decoder werden jetzt schneller erkannt
+  * Kurze DCC Adresse erhält jetzt einen gültigen Wert, wenn eine lange DCC Adresse programmiert wird
+  * Reihenfolge der Einträge im Assistent entspricht nicht der Reihenfolge im LokProgrammer v2
+  
+- Decoder Firmware Version 4.3.9008
+  * Verbesserte Fahreigenschaften im Analogmodus
+
+
+Version 4.1.4:
+===============
+- Neue Features:
+  * Samples, die kürzer als 65ms sind werden jetzt beim Import automatisch verlängert (loop)
+  
+- Bugfixes
+  * Sound von Diesel- und Elektroloks mit langen Samples in Übergängen wurden nicht korrekt importiert.
+  * Die Lüfterspur von Elektroloks wurde nicht richtig importiert
+  * .esu Dateien mit mehrfach vorkommenden Dateinamen konnten nicht importiert werden
+
+- Decoder Firmware Version 4.3.8991:
+  * Verbesserte Lastregelung für HAG und Märklin Motoren
+  * ABC Langsamfahrmodus
+  * Programmierung von SUSI CVs
+
+Version 4.1.3:
+===============
+- Neue Features:
+  * Import von LokSound V3.x Dateien 
+  * Unterstüztung für LokPilot micro V4.0 und LokPilot micro V4.0 DCC 
+  * Bei Programmstart wird jetzt ein Assistent wie in Version 2.x.x angezeigt 
+  * Die Programmsprache kann jetzt durch den Benutzer geändert werden 
+  * Decodertyp des Projekts kann geändert werden
+
+- Bugfixes:
+  * Fehlerhafte Werte in der Geschwindigkeitstabelle konnten eine Exception auslösen
+  * Tippfehler unter Fahreigenschaften korrigiert 
+  * Es wird eine Abfrage angezeigt, bevor Firmwareupdate Standardwerte wiederhergestellt werden 
+  * Dateiname wurde beim Speichern nicht aktualisiert 
+
+Version 4.1.2:
+==============
+- Bugfixes:
+  * Fallbackwerte für Funktionen wurden nicht korrekt geschrieben
+  * CV17 wurde nicht in der manuellen CV Eingabe angezeigt
+  * Loktyp konnte bei vordefinertem Loksymbol geändert werden
+  * PowerPack Einstellungen hinzgefügt
+
+- Neue Features:
+  * Unterstützung für LokSound micro V4.0 
+  * Die Fenstergröße und Position wird bei Programmstart wiederherghestellt
+    
+- Decoder Firmware 4.2.8920 für LokSound V4.0, LokPilot V4.0 
+  and LokPilot V4.0 DCC.  
+  * Probleme bei Adresszuweisung via RailComPlus behoben
+
+Version 4.1.1:
+==============
+- Neue Features:
+  * Installationsprogramm erzeugt jetzt ein Desktopsymbol
+  * Unterstützung für RailComPlus hinzugefügt
+
+- Bugfixes:
+  * Konstanter Bremsweg bei Fahrstufe 0 konne nicht geändert werden
+  * Projektversion wurde in Metadaten nicht gespeichert
+  * Ungültige Werte im Functionmapping haben einen Programmfehler verursacht.
+  
+- Firmware Version 4.2.8916
+  * RailComPlus Unterstützung für LokPilot V4.0, LokPilot V4.0 DCC und LokSound V4.0
+  
+Version 4.1.0:
+==============
+- LokPilot V4.0 Firmware (4.2.8892)
+  * Anfahrverzögerung / virtuelles Fahrgeräusch hinzugefügt
+  * Konstanter Bremsweg bei Fahrstufe 0
+  * Unterstützung für CV Programmierung über Hilfs-CVs (CV96-99)
+  
+- Neue Features:
+  * LokSound BR215 wird jetzt unterstützt
+  
+- Bugfixes: 
+  * Decoder-Firmware konnte mit PL2303 USB Adapter nicht aktualisiert werden
+  * Beim Ändern der Geschwindigkeitstabelle wurden falsche Werte erzeugt  
+  * In manchen Fällen wurden falsche Werte für lange DCC Adresse erzeugt
+  * Decodertest: F1 konnte im Motorolamodus in Fahrstufe 1 und 2 nicht abgeschaltet werden
+  
+Version 4.0.1:
+==============
+- LokPilot V4.0 Firmware (4.1.8829):
+  * Automatisches abkuppeln funktioniert jetzt, wenn verschiedene AUX-Ausgänge verwendet werden
+  * Adaptive Regelungsfrequenz kann abgeschaltet werden um Brummgeräusche des Motors zu verhindern. 
+Die neue Firmwareversion ist in der Software enthalten. Die Decoder werden automatisch aktualisiert.
+
+- Bugfixes:
+  * QuickInfo unter den Schaltflächen waren nicht lokalisiert.
+  * Rauchgenerator: "Heizstufe bei während die Lok steht" war "Heizstufe während der Fahrt"
+  * Installation von PL2303 Treiber hat nicht funktioniert
+  * Starmenüeintrag wird jetzt für alle Benutzer erstellt  
+  * Lange Adresse wurde teilweise nicht korrekt geschrieben
+  
+- Neue Features:  
+  * Manuelle CV Eingabe wie in Version 2
+  * Fenster für Erweiterte Decoderinformationen
+  * Unterstützung für LokSound Select
+  * Decoderinformationen können angezeigt / bearbeitet werden     
+  * Vorlagen zur Geschwindigkeitstabelle hinzugefügt
+  * Die DCC-Adresse des Decoders kann jetzt im Decodertest automatisch ermittelt werden
