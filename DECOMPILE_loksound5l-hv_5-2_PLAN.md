@@ -154,15 +154,18 @@ Verified against all 17 `.fw` files in `5-2/` and `DecoderInfo.dat` (implemented
   - Entropy `7.9976` bits/byte; `0/295` pages match across `5-0`/`5-1`/`5-2`; `294/294` pages change in ~271/272 bytes between `5-12-177.fw` and `5-12-178.fw`.
 - **Inferred bootloader algorithm:** Each 272-byte frame consists of `16 B` per-page IV/nonce/header + `256 B` ciphertext (matching SAM 256-byte NVM row programming), or `12 B` header + `256 B` ciphertext + `4 B` integrity tag/CRC, decrypted inside the SAMC51 bootloader using a hardware-resident key (AES-128/256-CBC/CTR or AEAD).
 
-### 9.4 Stage 3B: 145-Byte Page Obfuscation Model (`0x20` + 144 B) ⚠️
-- **Framing:** `byte[0] == 0x20` (packet/target selector, constant across all 41 pages), followed by a 144-byte frame (`pos 1..144`), matching the `13 B header + 128 B payload + 3 B trailer` geometry of `0-0-6442.fw`.
-- **Observed scrambling invariants (non-AES):**
-  - Unlike `0-0-6442.fw`'s `Y[pos] = ((0x55 - page[pos]) & 0xFF) ^ ((pos - 13) & 0xFF)`, the 145-byte pages expose direct arithmetic/XOR-masked runs in raw bytes:
-    - `145B[13]`, `pos 15..39`: `byte[pos] = (0xAC + (pos ^ 0x04)) & 0xFF`
-    - `145B[31]`, `pos 13..68`: `byte[pos] = (0xBC + ((pos - 13) ^ 0x0F)) & 0xFF`
-    - `145B[31]`, `pos 77..108`: `byte[pos] = (0x7B - ((pos - 77) ^ 0x02)) & 0xFF`
-    - `145B[31]`, `pos 112..143`: 8 × 4-byte structured records.
-  - Because all 41 pages are 100% identical across `5-6-145`..`5-13-180` and `5-0`/`5-1`/`5-2`, and no blank-flash (`0xFF`) page is present, the exact inverse bijection remains to be recovered from the bootloader or known-plaintext table matching.
+### 9.4 Stage 3B: 145-Byte Page Obfuscation Model (`0x20` + 144 B) ✅/⚠️
+- **Framing ✅:** `byte[0] == 0x20` (packet/target selector, constant across all 41 pages), followed by a 144-byte frame (`p = 1..144`): `12 B header (p=1..12) + 128 B payload (p=13..140) + 4 B trailer (p=141..144)`.
+- **Solved position-dependent XOR bijection ✅:**
+  ```python
+  Y[p] = ((page[p] + 4) & 0xFF) ^ ((p - 13) & 0xFF)   # for p = 1..144
+  ```
+  (equivalent complement form: `((27 - page[p]) & 0xFF) ^ ((p + 19) & 0xFF)`).
+  **Verification across all 41 pages:**
+  - Collapses `145B[13]` (`p = 13..37`) to constant `0xC4` (25×) and `p = 44..139` to 4-byte structured records `[B0, X, X, X-0x13]`.
+  - Collapses `145B[31]` (`p = 13..67`) to constant `0xCF` (55×), `p = 77..108` to constant `0xD3` (32×), and `p = 112..139` to 4-byte records `[A, A+0x11, B, B+0x10]` with `+7/-9` steps.
+  - Aligns the 12-byte header across all 41 pages: `Y[5] - Y[4]` takes only 3 values (`0, +8, -8` in 41/41 pages) and `Y[7] - Y[6]` takes only 6 values (`-16, -8, -24...` in 39/41 pages).
+- **Remaining inner byte substitution (`Y -> plain`) ⚠️:** Because all 41 pages are 100% identical across `5-6-145`..`5-13-180` and `5-0`/`5-1`/`5-2`, and no blank-flash (`0xFF`) page is present, the final `Y -> plain` byte mapping remains to be recovered from the bootloader or known-plaintext table matching.
 
 ### 9.5 Reference: `LokProgrammer.exe` Babel.NET Resource Decryption ✅
 Used internally by `LokProgrammer.exe` (`0x0600359c` at `RVA 0x1ff114`) to unpack `KmnL.res.bin` (4 MB string/constant database, unrelated to `.fw` payload decryption):
